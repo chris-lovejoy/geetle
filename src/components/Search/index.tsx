@@ -57,7 +57,7 @@ export function Search({ currentTry, setSelectedSong }: Props) {
           <IoSearch size={20} />
           <Styled.Input
             onChange={(e) => setValue(e.currentTarget.value)}
-            placeholder="Search"
+            placeholder="Know it? Search for the artist / title"
             value={value}
           />
         </Styled.SearchPadding>
