@@ -8,7 +8,7 @@ export function scoreToEmoji(guesses: GuessType[]): string {
     empty: "⬛️",
   };
   const todaysDate = new Date();
-  const prefix = `Greetle - ${todaysDate.toLocaleDateString()} 🎧`;
+  const prefix = `Geetle - ${todaysDate.toLocaleDateString()} 🎧`;
 
   let scoreEmoji = "";
 
