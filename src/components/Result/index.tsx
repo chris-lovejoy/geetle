@@ -43,7 +43,7 @@ export function Result({
       <>
         <Styled.ResultTitle>{textForTry[currentTry - 1]}</Styled.ResultTitle>
         <Styled.SongTitle>
-          Today&apos;s song is {todaysSolution.artist} - {todaysSolution.name}
+          Today&apos;s song is {todaysSolution.movie} - {todaysSolution.name}
         </Styled.SongTitle>
         <Styled.Tries>
           You guessed it with {currentTry} {triesConjugation}
@@ -63,7 +63,7 @@ export function Result({
       <>
         <Styled.ResultTitle>Unfortunately not...</Styled.ResultTitle>
         <Styled.SongTitle>
-          Today&apos;s song is {todaysSolution.artist} - {todaysSolution.name}
+          Today&apos;s song is {todaysSolution.movie} - {todaysSolution.name}
         </Styled.SongTitle>
         <YouTube id={todaysSolution.youtubeId} />
         <Styled.TimeToNext>

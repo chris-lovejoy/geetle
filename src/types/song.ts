@@ -1,5 +1,5 @@
 export interface Song {
-  artist: string;
+  movie: string;
   name: string;
   youtubeId: string;
 }

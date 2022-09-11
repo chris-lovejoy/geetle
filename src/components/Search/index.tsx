@@ -36,18 +36,18 @@ export function Search({ currentTry, setSelectedSong }: Props) {
             key={song.youtubeId}
             onClick={() => {
               setSelectedSong(song);
-              setValue(`${song.artist} - ${song.name}`);
+              setValue(`${song.movie} - ${song.name}`);
               setResults([]);
 
               event({
                 category: "Player",
                 action: "Chose song",
-                label: `${song.artist} - ${song.name}`,
+                label: `${song.movie} - ${song.name}`,
               });
             }}
           >
             <Styled.ResultText>
-              {song.artist} - {song.name}
+              {song.movie} - {song.name}
             </Styled.ResultText>
           </Styled.Result>
         ))}
@@ -57,7 +57,7 @@ export function Search({ currentTry, setSelectedSong }: Props) {
           <IoSearch size={20} />
           <Styled.Input
             onChange={(e) => setValue(e.currentTarget.value)}
-            placeholder="Know it? Search for the artist / title"
+            placeholder="Know it? Search for the movie / title"
             value={value}
           />
         </Styled.SearchPadding>

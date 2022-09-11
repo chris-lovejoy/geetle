@@ -136,7 +136,7 @@ function App() {
     event({
       category: "Game",
       action: "Guess",
-      label: `${selectedSong.artist} - ${selectedSong.name}`,
+      label: `${selectedSong.movie} - ${selectedSong.name}`,
       value: isCorrect ? 1 : 0,
     });
   }, [guesses, selectedSong]);

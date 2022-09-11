@@ -16,7 +16,7 @@ export function Guess({ guess, isCorrect, active }: Props) {
 
   React.useEffect(() => {
     if (song) {
-      setText(`${song.artist} - ${song.name}`);
+      setText(`${song.movie} - ${song.name}`);
     } else if (skipped) {
       setText("Skipped");
     } else {
