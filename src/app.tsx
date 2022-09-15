@@ -78,10 +78,20 @@ function App() {
     setIsInfoPopUpOpen(true);
   }, []);
 
-  const gameMode = "Masti";
+  const toMastiGameMode = React.useCallback(() => {
+    setGameMode("Masti");
+  }, []);
+
+  const toUstaadGameMode = React.useCallback(() => {
+    setGameMode("Ustaad");
+  }, []);
+
+  const [gameMode, setGameMode] = React.useState("Masti");
 
   const headerProps = {
     openInfoPopUp: openInfoPopUp,
+    toMastiGameMode: toMastiGameMode,
+    toUstaadGameMode: toUstaadGameMode,
     gameMode: gameMode,
   };
 
