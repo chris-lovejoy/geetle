@@ -16,8 +16,9 @@ export const Container = styled.header`
 
 export const Content = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
+  grid-template-columns: 4fr 1fr;
+  justify-items: center;
   justify-content: space-between;
 
   width: 40%;
@@ -36,6 +37,12 @@ export const Content = styled.div`
   a {
     color: ${({ theme }) => theme.text};
   }
+`;
+
+export const ToggleButtons = styled.div`
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
 `;
 
 export const Logo = styled.h1`

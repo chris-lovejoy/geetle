@@ -78,6 +78,23 @@ function App() {
     setIsInfoPopUpOpen(true);
   }, []);
 
+  const toMastiGameMode = React.useCallback(() => {
+    setGameMode("Masti");
+  }, []);
+
+  const toUstaadGameMode = React.useCallback(() => {
+    setGameMode("Ustaad");
+  }, []);
+
+  const [gameMode, setGameMode] = React.useState("Masti");
+
+  const headerProps = {
+    openInfoPopUp: openInfoPopUp,
+    toMastiGameMode: toMastiGameMode,
+    toUstaadGameMode: toUstaadGameMode,
+    gameMode: gameMode,
+  };
+
   const closeInfoPopUp = React.useCallback(() => {
     if (firstRun) {
       localStorage.setItem("firstRun", "false");
@@ -143,7 +160,7 @@ function App() {
 
   return (
     <main>
-      <Header openInfoPopUp={openInfoPopUp} />
+      <Header {...headerProps} />
       {isInfoPopUpOpen && <InfoPopUp onClose={closeInfoPopUp} />}
       <Styled.Container>
         <Game
