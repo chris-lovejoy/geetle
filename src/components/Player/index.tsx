@@ -10,9 +10,10 @@ import * as Styled from "./index.styled";
 interface Props {
   id: string;
   currentTry: number;
+  gameMode: string;
 }
 
-export function Player({ id, currentTry }: Props) {
+export function Player({ id, currentTry, gameMode }: Props) {
   const opts = {
     width: "0",
     height: "0",
@@ -30,6 +31,8 @@ export function Player({ id, currentTry }: Props) {
 
   const [isReady, setIsReady] = React.useState<boolean>(false);
 
+  const [ustaadPlayed, setUstaadPlayed] = React.useState<boolean>(false);
+
   React.useEffect(() => {
     setInterval(() => {
       playerRef.current?.internalPlayer
@@ -39,6 +42,10 @@ export function Player({ id, currentTry }: Props) {
         });
     }, 250);
   }, []);
+
+  React.useEffect(() => {
+    setUstaadPlayed(false);
+  }, [currentTry]);
 
   React.useEffect(() => {
     if (play) {
@@ -58,6 +65,9 @@ export function Player({ id, currentTry }: Props) {
       category: "Player",
       action: "Played song",
     });
+    if (gameMode === "Ustaad") {
+      setUstaadPlayed(true);
+    }
   }, []);
 
   const setReady = React.useCallback(() => {
@@ -82,12 +92,23 @@ export function Player({ id, currentTry }: Props) {
             <Styled.TimeStamp>1s</Styled.TimeStamp>
             <Styled.TimeStamp>16s</Styled.TimeStamp>
           </Styled.TimeStamps>
-          <IoPlay
-            style={{ cursor: "pointer" }}
-            size={40}
-            color="#fff"
-            onClick={startPlayback}
-          />
+          {!ustaadPlayed && (
+            <IoPlay
+              style={{ cursor: "pointer" }}
+              size={40}
+              color="#fff"
+              onClick={startPlayback}
+            />
+          )}
+          {ustaadPlayed && (
+            <IoPlay
+              style={{ cursor: "pointer" }}
+              size={40}
+              color="#fff"
+              onClick={() => void 0}
+            />
+          )}
+          <p>played: {ustaadPlayed.toString()}</p>
         </>
       ) : (
         <p>Loading...</p>

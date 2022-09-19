@@ -49,7 +49,11 @@ export function Game({
           active={index === currentTry}
         />
       ))}
-      <Player id={todaysSolution.youtubeId} currentTry={currentTry} />
+      <Player
+        id={todaysSolution.youtubeId}
+        currentTry={currentTry}
+        gameMode={gameMode}
+      />
       {gameMode === "Ustaad" && (
         <p>
           <b>
