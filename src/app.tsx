@@ -23,6 +23,7 @@ function App() {
     Array.from({ length: 5 }).fill(initialGuess) as GuessType[]
   );
   const [currentTry, setCurrentTry] = React.useState<number>(0);
+  const [currentUstaadTry, setCurrentUstaadTry] = React.useState<number>(0);
   const [selectedSong, setSelectedSong] = React.useState<Song>();
   const [didGuess, setDidGuess] = React.useState<boolean>(false);
 
@@ -86,7 +87,7 @@ function App() {
     setGameMode("Ustaad");
   }, []);
 
-  const [gameMode, setGameMode] = React.useState("Masti");
+  const [gameMode, setGameMode] = React.useState("");
 
   const headerProps = {
     openInfoPopUp: openInfoPopUp,
@@ -153,7 +154,6 @@ function App() {
 
       return newGuesses;
     });
-
     setCurrentTry((currentTry) => currentTry + 1);
     setSelectedSong(undefined);
 
@@ -184,6 +184,7 @@ function App() {
           didGuess={didGuess}
           todaysSolution={todaysSolution}
           currentTry={currentTry}
+          gameMode={gameMode}
           setSelectedSong={setSelectedSong}
           skip={skip}
           guess={guess}
