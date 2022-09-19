@@ -50,7 +50,13 @@ export function Game({
         />
       ))}
       <Player id={todaysSolution.youtubeId} currentTry={currentTry} />
-      {gameMode === "Ustaad" && <p>{5 - currentTry} plays remaining</p>}
+      {gameMode === "Ustaad" && (
+        <p>
+          <b>
+            <em>{5 - currentTry} plays remaining</em>
+          </b>
+        </p>
+      )}
       <Search currentTry={currentTry} setSelectedSong={setSelectedSong} />
 
       <Styled.Buttons>
