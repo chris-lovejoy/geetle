@@ -184,6 +184,7 @@ function App() {
           didGuess={didGuess}
           todaysSolution={todaysSolution}
           currentTry={currentTry}
+          gameMode={gameMode}
           setSelectedSong={setSelectedSong}
           skip={skip}
           guess={guess}
