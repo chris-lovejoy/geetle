@@ -87,7 +87,7 @@ function App() {
     setGameMode("Ustaad");
   }, []);
 
-  const [gameMode, setGameMode] = React.useState("Masti");
+  const [gameMode, setGameMode] = React.useState("");
 
   const headerProps = {
     openInfoPopUp: openInfoPopUp,

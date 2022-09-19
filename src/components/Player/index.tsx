@@ -113,6 +113,13 @@ export function Player({ id, currentTry, gameMode }: Props) {
               onClick={startPlayback}
             />
           )}
+          {gameMode === "" && (
+            <p>
+              <em>
+                Click the &apos;i&apos; in the top left to select a game mode.
+              </em>
+            </p>
+          )}
           {gameMode === "Ustaad" && !ustaadPlayed && (
             <IoPlay
               style={{ cursor: "pointer" }}
