@@ -54,13 +54,6 @@ export function Game({
         currentTry={currentTry}
         gameMode={gameMode}
       />
-      {gameMode === "Ustaad" && (
-        <p>
-          <b>
-            <em>{5 - currentTry} plays remaining</em>
-          </b>
-        </p>
-      )}
       <Search currentTry={currentTry} setSelectedSong={setSelectedSong} />
 
       <Styled.Buttons>

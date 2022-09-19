@@ -33,6 +33,10 @@ export function Player({ id, currentTry, gameMode }: Props) {
 
   const [ustaadPlayed, setUstaadPlayed] = React.useState<boolean>(false);
 
+  const [ustaadRemaining, setUstaadRemaining] = React.useState<number>(
+    5 - currentTry
+  );
+
   React.useEffect(() => {
     setInterval(() => {
       playerRef.current?.internalPlayer
@@ -45,6 +49,7 @@ export function Player({ id, currentTry, gameMode }: Props) {
 
   React.useEffect(() => {
     setUstaadPlayed(false);
+    setUstaadRemaining(5 - currentTry);
   }, [currentTry]);
 
   React.useEffect(() => {
@@ -65,9 +70,17 @@ export function Player({ id, currentTry, gameMode }: Props) {
       category: "Player",
       action: "Played song",
     });
-    if (gameMode === "Ustaad") {
-      setUstaadPlayed(true);
-    }
+  }, []);
+
+  const startPlaybackUstaad = React.useCallback(() => {
+    playerRef.current?.internalPlayer.playVideo();
+    setPlay(true);
+    event({
+      category: "Player",
+      action: "Played song",
+    });
+    setUstaadPlayed(true);
+    setUstaadRemaining((ustaadRemaining) => ustaadRemaining - 1);
   }, []);
 
   const setReady = React.useCallback(() => {
@@ -92,7 +105,7 @@ export function Player({ id, currentTry, gameMode }: Props) {
             <Styled.TimeStamp>1s</Styled.TimeStamp>
             <Styled.TimeStamp>16s</Styled.TimeStamp>
           </Styled.TimeStamps>
-          {!ustaadPlayed && (
+          {gameMode === "Masti" && (
             <IoPlay
               style={{ cursor: "pointer" }}
               size={40}
@@ -100,7 +113,15 @@ export function Player({ id, currentTry, gameMode }: Props) {
               onClick={startPlayback}
             />
           )}
-          {ustaadPlayed && (
+          {gameMode === "Ustaad" && !ustaadPlayed && (
+            <IoPlay
+              style={{ cursor: "pointer" }}
+              size={40}
+              color="#fff"
+              onClick={startPlaybackUstaad}
+            />
+          )}
+          {gameMode === "Ustaad" && ustaadPlayed && (
             <IoPlay
               style={{ cursor: "pointer" }}
               size={40}
@@ -108,7 +129,13 @@ export function Player({ id, currentTry, gameMode }: Props) {
               onClick={() => void 0}
             />
           )}
-          <p>played: {ustaadPlayed.toString()}</p>
+          {gameMode === "Ustaad" && (
+            <p>
+              <b>
+                <em>{ustaadRemaining} plays remaining</em>
+              </b>
+            </p>
+          )}
         </>
       ) : (
         <p>Loading...</p>

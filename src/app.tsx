@@ -23,6 +23,7 @@ function App() {
     Array.from({ length: 5 }).fill(initialGuess) as GuessType[]
   );
   const [currentTry, setCurrentTry] = React.useState<number>(0);
+  const [currentUstaadTry, setCurrentUstaadTry] = React.useState<number>(0);
   const [selectedSong, setSelectedSong] = React.useState<Song>();
   const [didGuess, setDidGuess] = React.useState<boolean>(false);
 
@@ -153,7 +154,6 @@ function App() {
 
       return newGuesses;
     });
-
     setCurrentTry((currentTry) => currentTry + 1);
     setSelectedSong(undefined);
 
