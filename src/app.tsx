@@ -161,7 +161,12 @@ function App() {
   return (
     <main>
       <Header {...headerProps} />
-      {isInfoPopUpOpen && <InfoPopUp onClose={closeInfoPopUp} />}
+      {isInfoPopUpOpen && (
+        <InfoPopUp
+          onCloseMasti={closeInfoPopUp}
+          onCloseUstaad={closeInfoPopUp}
+        />
+      )}
       <Styled.Container>
         <Game
           guesses={guesses}

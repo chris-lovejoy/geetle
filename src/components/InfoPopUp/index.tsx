@@ -10,10 +10,11 @@ import { Button } from "..";
 import * as Styled from "./index.styled";
 
 interface Props {
-  onClose: () => void;
+  onCloseMasti: () => void;
+  onCloseUstaad: () => void;
 }
 
-export function InfoPopUp({ onClose }: Props) {
+export function InfoPopUp({ onCloseMasti, onCloseUstaad }: Props) {
   return (
     <Styled.Container>
       <Styled.PopUp>
@@ -34,7 +35,6 @@ export function InfoPopUp({ onClose }: Props) {
           </p>
         </Styled.Section>
         <Styled.Section>
-          {/* <IoInvertMode size={70} /> */}
           <p>
             <b>There are two modes of play:</b>
           </p>
@@ -52,21 +52,29 @@ export function InfoPopUp({ onClose }: Props) {
         <Styled.Section>
           <IoPeopleSharp size={40} />
           <p>
-            Share your score, track your progress, and enjoy a new song everyday
+            Share your score, track your progress, and enjoy a new song everyday
           </p>
         </Styled.Section>
         <Styled.Section>
-          <Button variant="green" style={{ marginTop: 20 }} onClick={onClose}>
+          <Button
+            variant="green"
+            style={{ marginTop: 20 }}
+            onClick={onCloseMasti}
+          >
             Play Masti
           </Button>
-          <Button variant="red" style={{ marginTop: 20 }} onClick={onClose}>
+          <Button
+            variant="red"
+            style={{ marginTop: 20 }}
+            onClick={onCloseUstaad}
+          >
             Play Ustaad
           </Button>
         </Styled.Section>
         <Styled.Contact>
           {/* Contact - <a href="mailto:dev@chrislovejoy.me">dev@chrislovejoy.me</a>{" "} */}
           {/* <br /> */}
-          {/* <br /> */}
+          <br />
           Developed by{" "}
           <a href="mailto:dev@chrislovejoy.me">dev@chrislovejoy.me</a>
         </Styled.Contact>
