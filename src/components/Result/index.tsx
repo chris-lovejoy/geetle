@@ -3,6 +3,7 @@ import React from "react";
 import { Song } from "../../types/song";
 import { GuessType } from "../../types/guess";
 import { scoreToEmoji } from "../../helpers";
+import { playTimes } from "../../constants";
 
 import { Button } from "../Button";
 import { YouTube } from "../YouTube";
@@ -56,7 +57,7 @@ export function Result({
       navigator.clipboard.writeText(scoreToEmoji(guesses));
     }, [guesses]);
 
-    const triesConjugation = currentTry === 1 ? "attempt" : "attempts";
+    const secondsConjugation = currentTry === 1 ? "second" : "seconds";
 
     return (
       <>
@@ -71,10 +72,12 @@ export function Result({
           </Styled.ResultTitle>
         )}
         <Styled.SongTitle>
-          Today&apos;s song is {todaysSolution.movie} - {todaysSolution.name}
+          Well done!
+          {/* Today&apos;s song is {todaysSolution.movie} - {todaysSolution.name} */}
         </Styled.SongTitle>
         <Styled.Tries>
-          You guessed it with {currentTry} {triesConjugation}
+          You correctly guessed today&apos;s Geetle in{" "}
+          {playTimes[currentTry - 1] / 1000} {secondsConjugation}
         </Styled.Tries>
         <YouTube id={todaysSolution.youtubeId} />
         <Button onClick={copyResult} variant="green">
