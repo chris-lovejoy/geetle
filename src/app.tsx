@@ -29,6 +29,7 @@ function App() {
 
   const firstRun = localStorage.getItem("firstRun") === null;
   let stats = JSON.parse(localStorage.getItem("stats") || "{}");
+  const gameMode = localStorage.getItem("gameMode") || "";
 
   React.useEffect(() => {
     if (Array.isArray(stats)) {
@@ -72,6 +73,23 @@ function App() {
     localStorage.setItem("stats", JSON.stringify(stats));
   }, [stats]);
 
+  React.useEffect(() => {
+    const dateNow = new Date();
+    const todayDate = dateNow.getDate();
+    const todayMonth = dateNow.getMonth();
+    const todayString = `${todayDate}-${todayMonth}`;
+    const lastPlayed = localStorage.getItem("lastPlayed") || 0;
+    if (lastPlayed != todayString) {
+      localStorage.setItem("lastPlayed", todayString);
+      localStorage.setItem("gameMode", "");
+    }
+  }, []);
+
+  const dateNow = new Date();
+  const todayDate = dateNow.getDate();
+  const todayMonth = dateNow.getMonth();
+  const lastPlayed = `${todayDate}-${todayMonth}`;
+
   const [isInfoPopUpOpen, setIsInfoPopUpOpen] =
     React.useState<boolean>(firstRun);
 
@@ -79,28 +97,15 @@ function App() {
     setIsInfoPopUpOpen(true);
   }, []);
 
-  const toMastiGameMode = React.useCallback(() => {
-    setGameMode("Masti");
-  }, []);
-
-  const toUstaadGameMode = React.useCallback(() => {
-    setGameMode("Ustaad");
-  }, []);
-
-  const [gameMode, setGameMode] = React.useState("");
-
   const headerProps = {
     openInfoPopUp: openInfoPopUp,
-    toMastiGameMode: toMastiGameMode,
-    toUstaadGameMode: toUstaadGameMode,
     gameMode: gameMode,
   };
 
   const closeInfoPopUpUstaad = React.useCallback(() => {
-    setGameMode("Ustaad");
+    localStorage.setItem("gameMode", "Ustaad");
     if (firstRun) {
       localStorage.setItem("firstRun", "false");
-      // localStorage.setItem("gameMode", "Ustaad");
       setIsInfoPopUpOpen(false);
     } else {
       setIsInfoPopUpOpen(false);
@@ -108,10 +113,9 @@ function App() {
   }, [localStorage.getItem("firstRun")]);
 
   const closeInfoPopUpMasti = React.useCallback(() => {
-    setGameMode("Masti");
+    localStorage.setItem("gameMode", "Masti");
     if (firstRun) {
       localStorage.setItem("firstRun", "false");
-      // localStorage.setItem("gameMode", "Masti");
       setIsInfoPopUpOpen(false);
     } else {
       setIsInfoPopUpOpen(false);
@@ -182,6 +186,7 @@ function App() {
       <Header {...headerProps} />
       {isInfoPopUpOpen && (
         <InfoPopUp
+          gameMode={gameMode}
           onCloseMasti={closeInfoPopUpMasti}
           onCloseUstaad={closeInfoPopUpUstaad}
         />
