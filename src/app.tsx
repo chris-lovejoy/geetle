@@ -73,6 +73,23 @@ function App() {
     localStorage.setItem("stats", JSON.stringify(stats));
   }, [stats]);
 
+  React.useEffect(() => {
+    const dateNow = new Date();
+    const todayDate = dateNow.getDate();
+    const todayMonth = dateNow.getMonth();
+    const todayString = `${todayDate}-${todayMonth}`;
+    const lastPlayed = localStorage.getItem("lastPlayed") || 0;
+    if (lastPlayed != todayString) {
+      localStorage.setItem("lastPlayed", todayString);
+      localStorage.setItem("gameMode", "");
+    }
+  }, []);
+
+  const dateNow = new Date();
+  const todayDate = dateNow.getDate();
+  const todayMonth = dateNow.getMonth();
+  const lastPlayed = `${todayDate}-${todayMonth}`;
+
   const [isInfoPopUpOpen, setIsInfoPopUpOpen] =
     React.useState<boolean>(firstRun);
 
