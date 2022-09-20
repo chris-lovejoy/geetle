@@ -36,6 +36,7 @@ export function Game({
   if (didGuess || currentTry === 6) {
     return (
       <Result
+        gameMode={gameMode}
         didGuess={didGuess}
         currentTry={currentTry}
         todaysSolution={todaysSolution}
