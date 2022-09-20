@@ -7,8 +7,6 @@ import * as Styled from "./index.styled";
 
 interface Props {
   openInfoPopUp: () => void;
-  toMastiGameMode: () => void;
-  toUstaadGameMode: () => void;
   gameMode: string;
 }
 
@@ -22,22 +20,6 @@ export function Header(headerProps: Props) {
           width={30}
           height={30}
         />
-        {/* {headerProps.gameMode === "Masti" && (
-          <BsCircle
-            onClick={headerProps.toUstaadGameMode}
-            size={30}
-            width={30}
-            height={30}
-          />
-        )}
-        {headerProps.gameMode === "Ustaad" && (
-          <BsCircle
-            onClick={headerProps.toMastiGameMode}
-            size={30}
-            width={30}
-            height={30}
-          />
-        )} */}
       </Styled.ToggleButtons>
       <Styled.Content>
         <Styled.Logo>Geetle</Styled.Logo>
