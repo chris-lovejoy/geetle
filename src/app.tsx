@@ -100,6 +100,7 @@ function App() {
     setGameMode("Ustaad");
     if (firstRun) {
       localStorage.setItem("firstRun", "false");
+      // localStorage.setItem("gameMode", "Ustaad");
       setIsInfoPopUpOpen(false);
     } else {
       setIsInfoPopUpOpen(false);
@@ -110,6 +111,7 @@ function App() {
     setGameMode("Masti");
     if (firstRun) {
       localStorage.setItem("firstRun", "false");
+      // localStorage.setItem("gameMode", "Masti");
       setIsInfoPopUpOpen(false);
     } else {
       setIsInfoPopUpOpen(false);
