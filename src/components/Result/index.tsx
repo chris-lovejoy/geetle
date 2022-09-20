@@ -10,6 +10,7 @@ import { YouTube } from "../YouTube";
 import * as Styled from "./index.styled";
 
 interface Props {
+  gameMode: string;
   didGuess: boolean;
   currentTry: number;
   todaysSolution: Song;
@@ -17,6 +18,7 @@ interface Props {
 }
 
 export function Result({
+  gameMode,
   didGuess,
   todaysSolution,
   guesses,
@@ -29,8 +31,23 @@ export function Result({
       60 /
       60
   );
-
-  const textForTry = ["Good job", "Nice one", "Well done", "Nice!"];
+  
+  const textForTryMasti = [
+    "Jo jeeta wohi sikander",
+    "Where’s the party tonight?",
+    "It’s the time to disco",
+    "All izz well",
+    "Hum Kisi Se Kam Nahi",
+    "Kar har maidan fateh",
+  ];
+  const textForTryUstaad = [
+    "Ustaadon ke ustaad",
+    "Where’s the party tonight?",
+    "It’s the time to disco",
+    "All izz well",
+    "Hum Kisi Se Kam Nahi",
+    "Kar har maidan fateh",
+  ];
 
   if (didGuess) {
     const copyResult = React.useCallback(() => {
@@ -41,7 +58,16 @@ export function Result({
 
     return (
       <>
-        <Styled.ResultTitle>{textForTry[currentTry - 1]}</Styled.ResultTitle>
+        {gameMode == "Ustaad" && (
+          <Styled.ResultTitle>
+            {textForTryUstaad[currentTry - 1]}
+          </Styled.ResultTitle>
+        )}
+        {gameMode == "Masti" && (
+          <Styled.ResultTitle>
+            {textForTryMasti[currentTry - 1]}
+          </Styled.ResultTitle>
+        )}
         <Styled.SongTitle>
           Today&apos;s song is {todaysSolution.movie} - {todaysSolution.name}
         </Styled.SongTitle>
