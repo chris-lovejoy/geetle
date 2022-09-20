@@ -23,7 +23,7 @@ function App() {
     Array.from({ length: 5 }).fill(initialGuess) as GuessType[]
   );
   const [currentTry, setCurrentTry] = React.useState<number>(0);
-  const [currentUstaadTry, setCurrentUstaadTry] = React.useState<number>(0);
+  const [numPlaysAtTry, setNumPlaysAtTry] = React.useState<number>(0);
   const [selectedSong, setSelectedSong] = React.useState<Song>();
   const [didGuess, setDidGuess] = React.useState<boolean>(false);
 
@@ -100,6 +100,7 @@ function App() {
     setGameMode("Ustaad");
     if (firstRun) {
       localStorage.setItem("firstRun", "false");
+      // localStorage.setItem("gameMode", "Ustaad");
       setIsInfoPopUpOpen(false);
     } else {
       setIsInfoPopUpOpen(false);
@@ -110,11 +111,17 @@ function App() {
     setGameMode("Masti");
     if (firstRun) {
       localStorage.setItem("firstRun", "false");
+      // localStorage.setItem("gameMode", "Masti");
       setIsInfoPopUpOpen(false);
     } else {
       setIsInfoPopUpOpen(false);
     }
   }, [localStorage.getItem("firstRun")]);
+
+  const incrementPlaysAtTry = React.useCallback(() => {
+    setNumPlaysAtTry((numPlaysAtTry) => numPlaysAtTry + 1);
+    return;
+  }, []);
 
   const skip = React.useCallback(() => {
     setGuesses((guesses: GuessType[]) => {
@@ -124,11 +131,11 @@ function App() {
         skipped: true,
         isCorrect: undefined,
       };
-
       return newGuesses;
     });
 
     setCurrentTry((currentTry) => currentTry + 1);
+    setNumPlaysAtTry(0);
 
     event({
       category: "Game",
@@ -155,6 +162,7 @@ function App() {
       return newGuesses;
     });
     setCurrentTry((currentTry) => currentTry + 1);
+    setNumPlaysAtTry(0);
     setSelectedSong(undefined);
 
     if (isCorrect) {
@@ -185,9 +193,11 @@ function App() {
           todaysSolution={todaysSolution}
           currentTry={currentTry}
           gameMode={gameMode}
+          numPlaysAtTry={numPlaysAtTry}
           setSelectedSong={setSelectedSong}
           skip={skip}
           guess={guess}
+          incrementPlays={incrementPlaysAtTry}
         />
       </Styled.Container>
       <Footer />

@@ -3,17 +3,25 @@ import YouTube from "react-youtube";
 import { IoPlay } from "react-icons/io5";
 import { event } from "react-ga";
 
-import { playTimes } from "../../constants";
+import { playTimes, playLimits } from "../../constants";
 
 import * as Styled from "./index.styled";
 
 interface Props {
   id: string;
   currentTry: number;
+  numPlaysAtTry: number;
   gameMode: string;
+  incrementPlays: () => void;
 }
 
-export function Player({ id, currentTry, gameMode }: Props) {
+export function Player({
+  id,
+  currentTry,
+  numPlaysAtTry,
+  gameMode,
+  incrementPlays,
+}: Props) {
   const opts = {
     width: "0",
     height: "0",
@@ -31,11 +39,8 @@ export function Player({ id, currentTry, gameMode }: Props) {
 
   const [isReady, setIsReady] = React.useState<boolean>(false);
 
-  const [ustaadPlayed, setUstaadPlayed] = React.useState<boolean>(false);
-
-  const [ustaadRemaining, setUstaadRemaining] = React.useState<number>(
-    5 - currentTry
-  );
+  const [noPlaysRemaining, setNoPlaysRemaining] =
+    React.useState<boolean>(false);
 
   React.useEffect(() => {
     setInterval(() => {
@@ -48,8 +53,13 @@ export function Player({ id, currentTry, gameMode }: Props) {
   }, []);
 
   React.useEffect(() => {
-    setUstaadPlayed(false);
-    setUstaadRemaining(5 - currentTry);
+    if (playLimits[currentTry] - numPlaysAtTry < 1 && gameMode === "Ustaad") {
+      setNoPlaysRemaining(true);
+    }
+  }, [numPlaysAtTry]);
+
+  React.useEffect(() => {
+    setNoPlaysRemaining(false);
   }, [currentTry]);
 
   React.useEffect(() => {
@@ -66,21 +76,11 @@ export function Player({ id, currentTry, gameMode }: Props) {
   const startPlayback = React.useCallback(() => {
     playerRef.current?.internalPlayer.playVideo();
     setPlay(true);
+    incrementPlays();
     event({
       category: "Player",
       action: "Played song",
     });
-  }, []);
-
-  const startPlaybackUstaad = React.useCallback(() => {
-    playerRef.current?.internalPlayer.playVideo();
-    setPlay(true);
-    event({
-      category: "Player",
-      action: "Played song",
-    });
-    setUstaadPlayed(true);
-    setUstaadRemaining((ustaadRemaining) => ustaadRemaining - 1);
   }, []);
 
   const setReady = React.useCallback(() => {
@@ -105,12 +105,20 @@ export function Player({ id, currentTry, gameMode }: Props) {
             <Styled.TimeStamp>1s</Styled.TimeStamp>
             <Styled.TimeStamp>16s</Styled.TimeStamp>
           </Styled.TimeStamps>
-          {gameMode === "Masti" && (
+          {!noPlaysRemaining && (
             <IoPlay
               style={{ cursor: "pointer" }}
               size={40}
               color="#fff"
               onClick={startPlayback}
+            />
+          )}
+          {noPlaysRemaining && (
+            <IoPlay
+              style={{ cursor: "pointer" }}
+              size={40}
+              color="#fff"
+              onClick={() => void 0}
             />
           )}
           {gameMode === "" && (
@@ -120,26 +128,13 @@ export function Player({ id, currentTry, gameMode }: Props) {
               </em>
             </p>
           )}
-          {gameMode === "Ustaad" && !ustaadPlayed && (
-            <IoPlay
-              style={{ cursor: "pointer" }}
-              size={40}
-              color="#fff"
-              onClick={startPlaybackUstaad}
-            />
-          )}
-          {gameMode === "Ustaad" && ustaadPlayed && (
-            <IoPlay
-              style={{ cursor: "pointer" }}
-              size={40}
-              color="#fff"
-              onClick={() => void 0}
-            />
-          )}
           {gameMode === "Ustaad" && (
             <p>
               <b>
-                <em>{ustaadRemaining} plays remaining</em>
+                <em>
+                  {Math.max(playLimits[currentTry] - numPlaysAtTry, 0)} plays
+                  remaining
+                </em>
               </b>
             </p>
           )}
