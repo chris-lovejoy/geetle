@@ -56,6 +56,12 @@ export function Player({
     if (playLimits[currentTry] - numPlaysAtTry < 1 && gameMode === "Ustaad") {
       setNoPlaysRemaining(true);
     }
+  }, []);
+
+  React.useEffect(() => {
+    if (playLimits[currentTry] - numPlaysAtTry < 1 && gameMode === "Ustaad") {
+      setNoPlaysRemaining(true);
+    }
   }, [numPlaysAtTry]);
 
   React.useEffect(() => {
@@ -132,7 +138,8 @@ export function Player({
             <p>
               <b>
                 <em>
-                  {playLimits[currentTry] - numPlaysAtTry} plays remaining
+                  {Math.min(playLimits[currentTry] - numPlaysAtTry, 0)} plays
+                  remaining
                 </em>
               </b>
             </p>
