@@ -31,7 +31,7 @@ export function Result({
       60 /
       60
   );
-  
+
   const textForTryMasti = [
     "Jo jeeta wohi sikander",
     "Where’s the party tonight?",
@@ -48,6 +48,8 @@ export function Result({
     "Hum Kisi Se Kam Nahi",
     "Kar har maidan fateh",
   ];
+  const textForFailMasti = "Apna time aayega";
+  const textForFailUstaad = "Haar kar jeetne wale ko baazigar kehte hai";
 
   if (didGuess) {
     const copyResult = React.useCallback(() => {
@@ -58,14 +60,14 @@ export function Result({
 
     return (
       <>
-        {gameMode == "Ustaad" && (
-          <Styled.ResultTitle>
-            {textForTryUstaad[currentTry - 1]}
-          </Styled.ResultTitle>
-        )}
         {gameMode == "Masti" && (
           <Styled.ResultTitle>
             {textForTryMasti[currentTry - 1]}
+          </Styled.ResultTitle>
+        )}
+        {gameMode == "Ustaad" && (
+          <Styled.ResultTitle>
+            {textForTryUstaad[currentTry - 1]}
           </Styled.ResultTitle>
         )}
         <Styled.SongTitle>
@@ -87,7 +89,12 @@ export function Result({
   } else {
     return (
       <>
-        <Styled.ResultTitle>Unfortunately not...</Styled.ResultTitle>
+        {gameMode == "Masti" && (
+          <Styled.ResultTitle>{textForFailMasti}</Styled.ResultTitle>
+        )}
+        {gameMode == "Ustaad" && (
+          <Styled.ResultTitle>{textForFailUstaad}</Styled.ResultTitle>
+        )}
         <Styled.SongTitle>
           Today&apos;s song is {todaysSolution.movie} - {todaysSolution.name}
         </Styled.SongTitle>
