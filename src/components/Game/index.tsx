@@ -14,9 +14,11 @@ interface Props {
   currentTry: number;
   didGuess: boolean;
   gameMode: string;
+  numPlaysAtTry: number;
   setSelectedSong: React.Dispatch<React.SetStateAction<Song | undefined>>;
   skip: () => void;
   guess: () => void;
+  incrementPlays: () => void;
 }
 
 export function Game({
@@ -25,9 +27,11 @@ export function Game({
   currentTry,
   didGuess,
   gameMode,
+  numPlaysAtTry,
   setSelectedSong,
   skip,
   guess,
+  incrementPlays,
 }: Props) {
   if (didGuess || currentTry === 6) {
     return (
@@ -52,7 +56,9 @@ export function Game({
       <Player
         id={todaysSolution.youtubeId}
         currentTry={currentTry}
+        numPlaysAtTry={numPlaysAtTry}
         gameMode={gameMode}
+        incrementPlays={incrementPlays}
       />
       <Search currentTry={currentTry} setSelectedSong={setSelectedSong} />
 

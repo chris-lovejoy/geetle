@@ -22,7 +22,7 @@ export function Header(headerProps: Props) {
           width={30}
           height={30}
         />
-        {headerProps.gameMode === "Masti" && (
+        {/* {headerProps.gameMode === "Masti" && (
           <BsCircle
             onClick={headerProps.toUstaadGameMode}
             size={30}
@@ -37,7 +37,7 @@ export function Header(headerProps: Props) {
             width={30}
             height={30}
           />
-        )}
+        )} */}
       </Styled.ToggleButtons>
       <Styled.Content>
         <Styled.Logo>Geetle</Styled.Logo>
