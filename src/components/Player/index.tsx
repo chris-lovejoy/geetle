@@ -56,12 +56,6 @@ export function Player({
     if (playLimits[currentTry] - numPlaysAtTry < 1 && gameMode === "Ustaad") {
       setNoPlaysRemaining(true);
     }
-  }, []);
-
-  React.useEffect(() => {
-    if (playLimits[currentTry] - numPlaysAtTry < 1 && gameMode === "Ustaad") {
-      setNoPlaysRemaining(true);
-    }
   }, [numPlaysAtTry]);
 
   React.useEffect(() => {
@@ -119,13 +113,6 @@ export function Player({
               onClick={startPlayback}
             />
           )}
-          {gameMode === "" && (
-            <p>
-              <em>
-                Click the &apos;i&apos; in the top left to select a game mode.
-              </em>
-            </p>
-          )}
           {noPlaysRemaining && (
             <IoPlay
               style={{ cursor: "pointer" }}
@@ -134,11 +121,18 @@ export function Player({
               onClick={() => void 0}
             />
           )}
+          {gameMode === "" && (
+            <p>
+              <em>
+                Click the &apos;i&apos; in the top left to select a game mode.
+              </em>
+            </p>
+          )}
           {gameMode === "Ustaad" && (
             <p>
               <b>
                 <em>
-                  {Math.min(playLimits[currentTry] - numPlaysAtTry, 0)} plays
+                  {Math.max(playLimits[currentTry] - numPlaysAtTry, 0)} plays
                   remaining
                 </em>
               </b>
