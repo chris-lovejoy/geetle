@@ -84,8 +84,7 @@ export function Result({
           Copy the result
         </Button>
         <Styled.TimeToNext>
-          Come back tomorrow to try again - the song will be updated in:{" "}
-          {hoursToNextDay} hours!
+          Come back in {hoursToNextDay} hours to play again!
         </Styled.TimeToNext>
       </>
     );
