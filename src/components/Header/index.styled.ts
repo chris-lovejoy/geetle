@@ -46,7 +46,7 @@ export const ToggleButtons = styled.div`
 `;
 
 export const Logo = styled.h1`
-  color: ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.header};
   font-family: "Roboto Serif", serif;
   text-transform: uppercase;
   width: max-content;
