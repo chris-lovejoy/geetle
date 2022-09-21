@@ -132,14 +132,12 @@ export function Player({
             <CircularInput value={currentTime / 16}>
               <CircularTrack />
               <CircularProgress />
-              {/* {playTimes.map((playTime) => (
-                <line
-                style={{ left: `${(playTime / 16000) * 100}%` }}
-                key={playTime}
-                />
-              } */}
-              <line x1={-10} x2={10} y1={100} y2={100} stroke="black" />
-              <line x1={190} x2={210} y1={100} y2={100} stroke="black" />
+              <line x1={100} x2={100} y1={-10} y2={10} stroke="#2C3088" />
+              <line x1={143} x2={135} y1={-1} y2={17} stroke="#2C3088" />
+              <line x1={180} x2={166} y1={25} y2={38} stroke="#2C3088" />
+              <line x1={190} x2={210} y1={100} y2={100} stroke="#2C3088" />
+              <line x1={143} x2={135} y1={201} y2={183} stroke="#2C3088" />
+              <line x1={-1} x2={17} y1={143} y2={135} stroke="#2C3088" />
             </CircularInput>
             <Styled.GeetleLogo>
               <img src={geetleLogo} height="150" />
