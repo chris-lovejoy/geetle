@@ -34,23 +34,23 @@ export function Result({
   );
 
   const textForTryMasti = [
-    "Jo jeeta wohi sikander",
-    "Where’s the party tonight?",
-    "It’s the time to disco",
-    "All izz well",
-    "Hum Kisi Se Kam Nahi",
-    "Kar har maidan fateh",
+    "Jo Jeeta Wohi Sikander!",
+    "Where’s The Party Tonight?!",
+    "It’s The Time To Disco!",
+    "All Izz Well!",
+    "Hum Kisi Se Kam Nahi!",
+    "Kar Har Maidan Fateh!",
   ];
   const textForTryUstaad = [
-    "Ustaadon ke ustaad",
-    "Where’s the party tonight?",
-    "It’s the time to disco",
-    "All izz well",
-    "Hum Kisi Se Kam Nahi",
-    "Kar har maidan fateh",
+    "Ustaadon Ke Ustaad!",
+    "Where’s The Party Tonight?!",
+    "It’s The Time To Disco!",
+    "All Izz Well!",
+    "Hum Kisi Se Kam Nahi!",
+    "Kar Har Maidan Fateh!",
   ];
-  const textForFailMasti = "Apna time aayega";
-  const textForFailUstaad = "Haar kar jeetne wale ko baazigar kehte hai";
+  const textForFailMasti = "Apna Time Aayega!";
+  const textForFailUstaad = "Haar Kar Jeetne Wale Ko BAAZIGAR Kehte Hai!";
 
   if (didGuess) {
     const copyResult = React.useCallback(() => {
@@ -72,7 +72,7 @@ export function Result({
           </Styled.ResultTitle>
         )}
         <Styled.SongTitle>
-          Well done!
+          Well Done!
           {/* Today&apos;s song is {todaysSolution.movie} - {todaysSolution.name} */}
         </Styled.SongTitle>
         <Styled.Tries>
@@ -81,7 +81,7 @@ export function Result({
         </Styled.Tries>
         <YouTube id={todaysSolution.youtubeId} />
         <Button onClick={copyResult} variant="green">
-          Copy the result
+          Share your result
         </Button>
         <Styled.TimeToNext>
           Come back in {hoursToNextDay} hours to play again!
