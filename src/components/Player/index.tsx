@@ -4,6 +4,7 @@ import { IoPlay } from "react-icons/io5";
 import { event } from "react-ga";
 
 import { playTimes, playLimits } from "../../constants";
+import geetleLogo from "./geetleLogo.png";
 
 import * as Styled from "./index.styled";
 
@@ -121,6 +122,7 @@ export function Player({
               onClick={() => void 0}
             />
           )}
+          <img src={geetleLogo} height="400" />
           {gameMode === "" && (
             <p>
               <em>
