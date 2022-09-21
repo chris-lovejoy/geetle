@@ -99,7 +99,7 @@ export function Player({
       <YouTube opts={opts} videoId={id} onReady={setReady} ref={playerRef} />
       {isReady ? (
         <>
-          <Styled.ProgressBackground>
+          {/* <Styled.ProgressBackground>
             {currentTime !== 0 && <Styled.Progress value={currentTime} />}
             {playTimes.map((playTime) => (
               <Styled.Separator
@@ -107,11 +107,11 @@ export function Player({
                 key={playTime}
               />
             ))}
-          </Styled.ProgressBackground>
-          <Styled.TimeStamps>
+          </Styled.ProgressBackground> */}
+          {/* <Styled.TimeStamps>
             <Styled.TimeStamp>1s</Styled.TimeStamp>
             <Styled.TimeStamp>16s</Styled.TimeStamp>
-          </Styled.TimeStamps>
+          </Styled.TimeStamps> */}
           {!noPlaysRemaining && (
             <IoPlay
               style={{ cursor: "pointer" }}
@@ -129,9 +129,11 @@ export function Player({
             />
           )}
           <Styled.GeetlePlayer>
-            <CircularInput value={currentTime / 16}>
+            <CircularInput
+              value={currentTime / 16}
+            >
               <CircularTrack />
-              <CircularProgress />
+              <CircularProgress stroke="#2C3088" />
               <line x1={100} x2={100} y1={-10} y2={10} stroke="#2C3088" />
               <line x1={143} x2={135} y1={-1} y2={17} stroke="#2C3088" />
               <line x1={180} x2={166} y1={25} y2={38} stroke="#2C3088" />
@@ -140,7 +142,12 @@ export function Player({
               <line x1={-1} x2={17} y1={143} y2={135} stroke="#2C3088" />
             </CircularInput>
             <Styled.GeetleLogo>
-              <img src={geetleLogo} height="150" />
+              <img
+                src={geetleLogo}
+                height="150"
+                style={{ cursor: "pointer" }}
+                onClick={startPlayback}
+              />
             </Styled.GeetleLogo>
           </Styled.GeetlePlayer>
           {gameMode === "" && (
