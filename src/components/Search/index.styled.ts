@@ -12,6 +12,8 @@ export const SearchContainer = styled.div`
   display: flex;
   align-items: center;
 
+  background: ${({ theme }) => theme.background100};
+
   width: 100%;
   height: 50px;
 

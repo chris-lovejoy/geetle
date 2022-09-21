@@ -1,9 +1,10 @@
 export const theme = {
-  border: "#F1F7ED",
+  border: "#2C3088",
   border100: "#5C5C5C",
 
   text: "#FFFFFF",
-  background100: "#002E3D",
+  header: "#2C3088",
+  background100: "#2C3088",
 
   green: "#4DBB60",
   red: "#FF0000",
