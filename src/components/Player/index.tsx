@@ -1,5 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import YouTube from "react-youtube";
+import {
+  CircularInput,
+  CircularTrack,
+  CircularProgress,
+  CircularThumb,
+} from "react-circular-input";
 import { IoPlay } from "react-icons/io5";
 import { event } from "react-ga";
 
@@ -88,6 +94,8 @@ export function Player({
     setIsReady(true);
   }, []);
 
+  const [value, setValue] = useState(0.25);
+
   return (
     <>
       <YouTube opts={opts} videoId={id} onReady={setReady} ref={playerRef} />
@@ -123,6 +131,19 @@ export function Player({
             />
           )}
           <img src={geetleLogo} height="400" />
+          <CircularInput value={currentTime / 16}>
+            <CircularTrack />
+            <CircularProgress />
+            {/* {playTimes.map((playTime) => (
+              <line
+                style={{ left: `${(playTime / 16000) * 100}%` }}
+                key={playTime}
+              />
+            } */}
+
+            <line x1={-10} x2={10} y1={100} y2={100} stroke="black" />
+            <line x1={190} x2={210} y1={100} y2={100} stroke="black" />
+          </CircularInput>
           {gameMode === "" && (
             <p>
               <em>
