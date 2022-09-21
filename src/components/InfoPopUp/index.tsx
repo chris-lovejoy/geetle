@@ -70,6 +70,24 @@ export function InfoPopUp({ gameMode, onCloseMasti, onCloseUstaad }: Props) {
             </Button>
           </Styled.Section>
         )}
+        {!firstRun && gameMode == "" && (
+          <Styled.Section>
+            <Button
+              variant="green"
+              style={{ marginTop: 20 }}
+              onClick={onCloseMasti}
+            >
+              Play Masti
+            </Button>
+            <Button
+              variant="red"
+              style={{ marginTop: 20 }}
+              onClick={onCloseUstaad}
+            >
+              Play Ustaad
+            </Button>
+          </Styled.Section>
+        )}
         {!firstRun && gameMode == "Masti" && (
           <>
             <Styled.Section>
