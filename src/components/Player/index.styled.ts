@@ -13,6 +13,7 @@ export const ProgressBackground = styled.div`
 `;
 
 export const GeetlePlayer = styled.div`
+  margin: 60px;
   position: relative;
 `;
 
