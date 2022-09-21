@@ -85,11 +85,6 @@ function App() {
     }
   }, []);
 
-  const dateNow = new Date();
-  const todayDate = dateNow.getDate();
-  const todayMonth = dateNow.getMonth();
-  const lastPlayed = `${todayDate}-${todayMonth}`;
-
   const [isInfoPopUpOpen, setIsInfoPopUpOpen] =
     React.useState<boolean>(firstRun);
 
