@@ -109,7 +109,7 @@ export function Player({
             <IoPlay
               style={{ cursor: "pointer" }}
               size={40}
-              color="#fff"
+              color="#2C3088"
               onClick={startPlayback}
             />
           )}
@@ -117,7 +117,7 @@ export function Player({
             <IoPlay
               style={{ cursor: "pointer" }}
               size={40}
-              color="#fff"
+              color="#2C3088"
               onClick={() => void 0}
             />
           )}
