@@ -46,14 +46,14 @@ export function Game({
   }
   return (
     <>
-      {guesses.map((guess: GuessType, index) => (
+      {/* {guesses.map((guess: GuessType, index) => (
         <Guess
           key={index}
           guess={guess}
           isCorrect={guess.isCorrect}
           active={index === currentTry}
         />
-      ))}
+      ))} */}
       <Player
         id={todaysSolution.youtubeId}
         currentTry={currentTry}
@@ -64,14 +64,12 @@ export function Game({
       <Search currentTry={currentTry} setSelectedSong={setSelectedSong} />
 
       <Styled.Buttons>
-        <Button onClick={skip}>
+        <Button variant="red" onClick={skip}>
           {currentTry === 5
             ? "Give up"
             : `Skip +${playTimes[currentTry] / 1000}s`}
         </Button>
-        <Button variant="green" onClick={guess}>
-          Guess
-        </Button>
+        <Button onClick={guess}>Guess</Button>
       </Styled.Buttons>
     </>
   );
