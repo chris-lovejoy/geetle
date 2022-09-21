@@ -26,8 +26,8 @@ export function InfoPopUp({ gameMode, onCloseMasti, onCloseUstaad }: Props) {
         <Styled.Section>
           <IoMusicalNoteOutline size={50} />
           <p>
-            Geetle is a Bollywood music game. The aim of the game is to guess
-            the name of the song by hearing as little of the track as possible.
+            Geetle is a fun Bollywood music game. The aim is to guess
+            the name of the song by hearing as little of the song as possible.
           </p>
         </Styled.Section>
         <Styled.Section>
@@ -38,18 +38,18 @@ export function InfoPopUp({ gameMode, onCloseMasti, onCloseUstaad }: Props) {
         </Styled.Section>
         <Styled.Section>
           <p>
-            <b>Masti</b>: play each segment of the track an unlimited number of
-            times
+            <b>Masti</b>: Listen to each segment of the song an unlimited number of
+            times.
           </p>
           <p>
-            <b>Ustaad</b>: challenge yourself with a limited number of segment
-            plays
+            <b>Ustaad</b>: Challenge yourself with a limited number of times you can listen to each segment.
+            
           </p>
         </Styled.Section>
         <Styled.Section>
           <IoPeopleSharp size={40} />
           <p>
-            Share your score, track your progress, and enjoy a new song everyday
+            Share your score, track your progress, and enjoy a new song everyday!
           </p>
         </Styled.Section>
         {firstRun && (
@@ -107,7 +107,7 @@ export function InfoPopUp({ gameMode, onCloseMasti, onCloseUstaad }: Props) {
               </Button>
             </Styled.Section>
             <Styled.Section>
-              <p>You have chosen to play {gameMode}. Good luck!</p>
+              <p>You have chosen to play in {gameMode} mode today. Good luck!</p>
             </Styled.Section>
           </>
         )}
@@ -130,7 +130,7 @@ export function InfoPopUp({ gameMode, onCloseMasti, onCloseUstaad }: Props) {
               </Button>
             </Styled.Section>
             <Styled.Section>
-              <p>You have chosen to play {gameMode} today. Good luck!</p>
+              <p>You have chosen to play in {gameMode} mode today. Good luck!</p>
             </Styled.Section>
           </>
         )}
