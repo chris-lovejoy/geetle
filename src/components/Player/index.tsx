@@ -94,8 +94,6 @@ export function Player({
     setIsReady(true);
   }, []);
 
-  const [value, setValue] = useState(0.25);
-
   return (
     <>
       <YouTube opts={opts} videoId={id} onReady={setReady} ref={playerRef} />
@@ -130,20 +128,23 @@ export function Player({
               onClick={() => void 0}
             />
           )}
-          <img src={geetleLogo} height="400" />
-          <CircularInput value={currentTime / 16}>
-            <CircularTrack />
-            <CircularProgress />
-            {/* {playTimes.map((playTime) => (
-              <line
+          <Styled.GeetlePlayer>
+            <CircularInput value={currentTime / 16}>
+              <CircularTrack />
+              <CircularProgress />
+              {/* {playTimes.map((playTime) => (
+                <line
                 style={{ left: `${(playTime / 16000) * 100}%` }}
                 key={playTime}
-              />
-            } */}
-
-            <line x1={-10} x2={10} y1={100} y2={100} stroke="black" />
-            <line x1={190} x2={210} y1={100} y2={100} stroke="black" />
-          </CircularInput>
+                />
+              } */}
+              <line x1={-10} x2={10} y1={100} y2={100} stroke="black" />
+              <line x1={190} x2={210} y1={100} y2={100} stroke="black" />
+            </CircularInput>
+            <Styled.GeetleLogo>
+              <img src={geetleLogo} height="150" />
+            </Styled.GeetleLogo>
+          </Styled.GeetlePlayer>
           {gameMode === "" && (
             <p>
               <em>

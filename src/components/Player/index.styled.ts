@@ -12,6 +12,16 @@ export const ProgressBackground = styled.div`
   margin-top: 5%;
 `;
 
+export const GeetlePlayer = styled.div`
+  position: relative;
+`;
+
+export const GeetleLogo = styled.div`
+  position: absolute;
+  top: 30px;
+  left: 40px;
+`;
+
 export const Progress = styled.div<{ value: number }>`
   width: ${({ value }) => value * 6.25}%;
   height: 20px;
