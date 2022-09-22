@@ -5,6 +5,8 @@ export const Container = styled.div`
   top: 0;
   z-index: 2;
 
+  font-family: "Helvetica", serif;
+
   width: 100%;
   height: 100%;
 

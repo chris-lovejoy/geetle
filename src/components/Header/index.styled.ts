@@ -11,7 +11,7 @@ export const Container = styled.header`
   border-bottom-width: 0.5px;
   border-bottom-style: solid;
 
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 `;
 
 export const Content = styled.div`
@@ -47,9 +47,12 @@ export const ToggleButtons = styled.div`
 
 export const Logo = styled.h1`
   color: ${({ theme }) => theme.header};
-  font-family: "Roboto Serif", serif;
+  font-family: "Mukta", serif;
+  font-size: 62px;
   text-transform: uppercase;
   width: max-content;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 
   -webkit-touch-callout: none;
   user-select: none;
