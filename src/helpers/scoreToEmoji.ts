@@ -2,10 +2,10 @@ import { GuessType } from "../types/guess";
 
 export function scoreToEmoji(guesses: GuessType[]): string {
   const emojis = {
-    incorrect: "🟥",
-    correct: "🟩",
-    skip: "⬜",
-    empty: "⬛️",
+    incorrect: "🔴",
+    correct: "🟢",
+    skip: "⚪️",
+    empty: "⚫️",
   };
   const todaysDate = new Date();
   const prefix = `Geetle - ${todaysDate.toLocaleDateString()} 🎧`;
