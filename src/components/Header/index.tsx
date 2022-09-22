@@ -13,17 +13,19 @@ interface Props {
 export function Header(headerProps: Props) {
   return (
     <Styled.Container>
-      <Styled.ToggleButtons>
-        <IoInformationCircleOutline
-          onClick={headerProps.openInfoPopUp}
-          size={30}
-          width={30}
-          height={30}
-        />
-      </Styled.ToggleButtons>
       <Styled.Content>
-        <Styled.Logo>Geetle</Styled.Logo>
-        <p>{headerProps.gameMode}</p>
+        <Styled.ToggleButtons>
+          <IoInformationCircleOutline
+            onClick={headerProps.openInfoPopUp}
+            size={30}
+            width={30}
+            height={30}
+          />
+        </Styled.ToggleButtons>
+        <Styled.Logo>
+          <h1>Geetle</h1>
+        </Styled.Logo>
+        <Styled.Mode>{headerProps.gameMode}</Styled.Mode>
       </Styled.Content>
     </Styled.Container>
   );

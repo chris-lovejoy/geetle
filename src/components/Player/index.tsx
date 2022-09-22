@@ -6,7 +6,6 @@ import {
   CircularProgress,
   CircularThumb,
 } from "react-circular-input";
-import { IoPlay } from "react-icons/io5";
 import { event } from "react-ga";
 
 import { playTimes, playLimits } from "../../constants";
@@ -99,19 +98,6 @@ export function Player({
       <YouTube opts={opts} videoId={id} onReady={setReady} ref={playerRef} />
       {isReady ? (
         <>
-          {/* <Styled.ProgressBackground>
-            {currentTime !== 0 && <Styled.Progress value={currentTime} />}
-            {playTimes.map((playTime) => (
-              <Styled.Separator
-                style={{ left: `${(playTime / 16000) * 100}%` }}
-                key={playTime}
-              />
-            ))}
-          </Styled.ProgressBackground> */}
-          {/* <Styled.TimeStamps>
-            <Styled.TimeStamp>1s</Styled.TimeStamp>
-            <Styled.TimeStamp>16s</Styled.TimeStamp>
-          </Styled.TimeStamps> */}
           {!noPlaysRemaining && (
             <Styled.GeetlePlayer>
               <CircularInput value={currentTime / 16}>

@@ -17,7 +17,7 @@ export const Container = styled.header`
 export const Content = styled.div`
   display: grid;
   align-items: center;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 1fr 4fr 3fr;
   justify-items: center;
   justify-content: space-between;
 
@@ -33,10 +33,6 @@ export const Content = styled.div`
     cursor: pointer;
     opacity: 0.8;
   }
-
-  a {
-    color: ${({ theme }) => theme.text};
-  }
 `;
 
 export const ToggleButtons = styled.div`
@@ -45,15 +41,23 @@ export const ToggleButtons = styled.div`
   align-items: center;
 `;
 
-export const Logo = styled.h1`
-  color: ${({ theme }) => theme.header};
-  font-family: "Mukta", serif;
-  font-size: 62px;
-  text-transform: uppercase;
-  width: max-content;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
+export const Logo = styled.div`
+  margin-left: auto;
+  h1 {
+    color: ${({ theme }) => theme.header};
+    font-family: "Mukta", serif;
+    font-size: 62px;
+    text-transform: uppercase;
+    width: max-content;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 
-  -webkit-touch-callout: none;
-  user-select: none;
+    -webkit-touch-callout: none;
+    user-select: none;
+  }
+`;
+
+export const Mode = styled.p`
+  margin-right: auto;
+  padding: 14px;
 `;
