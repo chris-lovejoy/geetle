@@ -21,6 +21,14 @@ export const GeetleLogo = styled.div`
   position: absolute;
   top: 30px;
   left: 40px;
+
+  img {
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
 `;
 
 export const Progress = styled.div<{ value: number }>`
