@@ -54,6 +54,11 @@ export const Separator = styled.div`
   background-color: ${({ theme }) => theme.border100};
 `;
 
+export const GamesRemaining = styled.div`
+  font-size: 30px;
+  color: #47c98a;
+`;
+
 export const TimeStamps = styled.div`
   display: flex;
   justify-content: space-between;

@@ -25,7 +25,12 @@ export function Header(headerProps: Props) {
         <Styled.Logo>
           <h1>Geetle</h1>
         </Styled.Logo>
-        <Styled.Mode>{headerProps.gameMode}</Styled.Mode>
+        {headerProps.gameMode === "Masti" && (
+          <Styled.MastiMode>{headerProps.gameMode}</Styled.MastiMode>
+        )}
+        {headerProps.gameMode === "Ustaad" && (
+          <Styled.UstaadMode>{headerProps.gameMode}</Styled.UstaadMode>
+        )}
       </Styled.Content>
     </Styled.Container>
   );

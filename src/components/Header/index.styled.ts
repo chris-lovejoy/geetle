@@ -57,7 +57,27 @@ export const Logo = styled.div`
   }
 `;
 
-export const Mode = styled.p`
+export const MastiMode = styled.p`
   margin-right: auto;
+  margin-bottom: auto;
+  background: #2c3088;
+  border-radius: 25px;
+  color: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+`;
+
+export const UstaadMode = styled.p`
+  margin-right: auto;
+  margin-bottom: auto;
   padding: 14px;
+  background: #47c98a;
+  border-radius: 25px;
+  color: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
 `;

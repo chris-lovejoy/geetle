@@ -149,16 +149,16 @@ export function Player({
               </em>
             </p>
           )}
-          {gameMode === "Ustaad" && (
-            <p>
-              <b>
-                <em>
+          <Styled.GamesRemaining>
+            {gameMode === "Ustaad" && (
+              <p>
+                <b>
                   {Math.max(playLimits[currentTry] - numPlaysAtTry, 0)} plays
                   remaining
-                </em>
-              </b>
-            </p>
-          )}
+                </b>
+              </p>
+            )}
+          </Styled.GamesRemaining>
         </>
       ) : (
         <p>Loading...</p>
