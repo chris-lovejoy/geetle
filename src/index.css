@@ -5,4 +5,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
   color: #2C3088;
+  @media (prefers-color-scheme: dark) {
+    background-color: white;
+    color: #2C3088;
+  }
 }
