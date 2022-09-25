@@ -26,8 +26,9 @@ export function InfoPopUp({ gameMode, onCloseMasti, onCloseUstaad }: Props) {
         <Styled.Section>
           <IoMusicalNoteOutline size={50} />
           <p>
-            Geetle is a fun Bollywood music game. The aim is to guess the name
-            of the song by hearing as little of the song as possible.
+            Geetle is a daily Bollywood music game. The aim of the 
+            game is to guess the name of the song by hearing as 
+            little of the track as possible.
           </p>
         </Styled.Section>
         <Styled.Section>
@@ -38,12 +39,12 @@ export function InfoPopUp({ gameMode, onCloseMasti, onCloseUstaad }: Props) {
         </Styled.Section>
         <Styled.Section>
           <p>
-            <b>Masti</b>: Listen to each segment of the song an unlimited number
+            <b>Masti</b>: Play each segment of the song an unlimited number
             of times.
           </p>
           <p>
-            <b>Ustaad</b>: Challenge yourself with a limited number of times you
-            can listen to each segment.
+            <b>Ustaad</b>: Challenge yourself with a limited number of segment
+            plays.
           </p>
         </Styled.Section>
         <Styled.Section>
