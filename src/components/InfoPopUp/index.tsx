@@ -37,15 +37,17 @@ export function InfoPopUp({ gameMode, onCloseMasti, onCloseUstaad }: Props) {
             <b>There are two modes of play:</b>
           </p>
         </Styled.Section>
+        <Styled.TitleSection>
+          <p>
+            <b>Masti</b>
+          </p>
+          <p>
+            <b>Ustaad</b>
+          </p>
+        </Styled.TitleSection>
         <Styled.Section>
-          <p>
-            <b>Masti</b>: Play each segment of the song an unlimited number of
-            times.
-          </p>
-          <p>
-            <b>Ustaad</b>: Challenge yourself with a limited number of segment
-            plays.
-          </p>
+          <p>Play each segment of the song an unlimited number of times.</p>
+          <p>Challenge yourself with a limited number of segment plays.</p>
         </Styled.Section>
         <Styled.Section>
           <IoPeopleSharp size={40} />

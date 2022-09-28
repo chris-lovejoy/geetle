@@ -45,9 +45,9 @@ export const PopUp = styled.div`
   h1 {
     margin-top: 40px;
     margin-bottom: 0;
+    color: #ffffff;
   }
 
-  h1,
   p {
     color: #ffffff;
   }
@@ -61,6 +61,23 @@ export const Spacer = styled.div`
 
   background-color: ${({ theme }) => theme.text};
   opacity: 0.5;
+`;
+
+export const TitleSection = styled.div`
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+
+  p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  a {
+    color: ${({ theme }) => theme.text};
+  }
 `;
 
 export const Section = styled.div`
