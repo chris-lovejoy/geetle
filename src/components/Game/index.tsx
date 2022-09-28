@@ -68,7 +68,7 @@ export function Game({
         <Button variant="pink" onClick={skip}>
           {currentTry === 5
             ? "Give up"
-            : `Skip +${playTimes[currentTry] / 1000}s`}
+            : `Add +${playTimes[currentTry] / 1000}s`}
         </Button>
         <Button onClick={guess}>Guess</Button>
       </Styled.Buttons>
