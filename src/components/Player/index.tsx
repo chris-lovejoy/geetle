@@ -199,25 +199,25 @@ export function Player({
             </Styled.GeetlePlayer>
           )}
           {showPlayPrompt && (
-            <p>
+            <Styled.Paragraph>
               <b>Click the Geetle Logo above to start playing</b>
-            </p>
+            </Styled.Paragraph>
           )}
           {gameMode === "" && (
-            <p>
+            <Styled.Paragraph>
               <em>
                 Click the &apos;i&apos; in the top left to select a game mode.
               </em>
-            </p>
+            </Styled.Paragraph>
           )}
           <Styled.GamesRemaining>
             {gameMode === "Ustaad" && (
-              <p>
+              <Styled.Paragraph>
                 <b>
                   {Math.max(playLimits[currentTry] - numPlaysAtTry, 0)} plays
                   remaining
                 </b>
-              </p>
+              </Styled.Paragraph>
             )}
           </Styled.GamesRemaining>
         </>
