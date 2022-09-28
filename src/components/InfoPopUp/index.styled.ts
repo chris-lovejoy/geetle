@@ -25,6 +25,14 @@ export const PopUp = styled.div`
   }
   padding: 15px;
 
+  height: 470px;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   background-color: ${({ theme }) => theme.background100};
 
   border-radius: 15px;
@@ -35,6 +43,7 @@ export const PopUp = styled.div`
   justify-content: center;
 
   h1 {
+    margin-top: 40px;
     margin-bottom: 0;
   }
 
