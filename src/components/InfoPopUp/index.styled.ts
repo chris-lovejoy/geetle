@@ -65,7 +65,7 @@ export const Spacer = styled.div`
 
 export const TitleSection = styled.div`
   display: flex;
-  gap: 200px;
+  gap: 140px;
   align-items: center;
   justify-content: space-between;
   color: #ffffff;
