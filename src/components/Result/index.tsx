@@ -94,11 +94,10 @@ export function Result({
               src={shareLogo}
               height="120"
               style={{ cursor: "pointer" }}
-              onClick={() => void 0}
+              onClick={copyResult}
             />
           </Styled.GeetleLogo>
         </Styled.GeetlePlayer>
-
         {gameMode == "Masti" && (
           <Styled.ResultTitle>
             {textForTryMasti[currentTry - 1]}
@@ -118,9 +117,6 @@ export function Result({
           {playTimes[currentTry - 1] / 1000} {secondsConjugation}
         </Styled.Tries>
         <YouTube id={todaysSolution.youtubeId} />
-        <Button onClick={copyResult} variant="green">
-          Share your result
-        </Button>
         <Styled.TimeToNext>
           Come back in {hoursToNextDay} hours and {minsToNextDay} minutes to
           play again!
