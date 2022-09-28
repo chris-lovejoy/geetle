@@ -17,7 +17,6 @@ export const SearchContainer = styled.div`
   width: 100%;
   height: 50px;
 
-  border-color: ${({ theme }) => theme.border};
   border-width: 1px;
   border-radius: 5px;
   border-style: solid;
@@ -43,8 +42,30 @@ export const Input = styled.input`
   border: none;
   outline: none !important;
 
+  color: white;
   color: ${({ theme }) => theme.text};
   font-size: 1rem;
+
+  ::-webkit-input-placeholder {
+    color: white;
+  }
+
+  ::-ms-input-placeholder {
+    color: white;
+  }
+
+  :-ms-input-placeholder {
+    color: white;
+  }
+
+  ::-moz-placeholder {
+    opacity: 1;
+    color: white;
+  }
+
+  ::placeholder {
+    color: white;
+  }
 `;
 
 export const ResultsContainer = styled.div`
