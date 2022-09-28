@@ -3,8 +3,8 @@ export const theme = {
   border100: "#5C5C5C",
 
   text: "#FFFFFF",
-  header: "#2C3088",
-  background100: "#2C3088",
+  header: "rgb(75,157,140)",
+  background100: "rgb(75,157,140)",
 
   green: "#4DBB60",
   red: "#FF0000",
