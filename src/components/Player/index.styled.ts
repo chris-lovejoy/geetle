@@ -6,21 +6,21 @@ export const ProgressBackground = styled.div`
 
   width: 100%;
   height: 20px;
-  background-color: ${({ theme }) => theme.gray};
+  background-color: rgb(91, 100, 103);
   border-radius: 2px;
 
   margin-top: 5%;
 `;
 
 export const GeetlePlayer = styled.div`
-  margin: 60px;
+  margin: 10px;
   position: relative;
 `;
 
 export const GeetleLogo = styled.div`
   position: absolute;
-  top: 30px;
-  left: 40px;
+  top: 45px;
+  left: 65px;
 
   img {
     -khtml-user-select: none;
