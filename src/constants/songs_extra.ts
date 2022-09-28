@@ -82,5 +82,100 @@ export const songs = [
     name: "Milegi Milegi",
     youtubeId: "1xYZeDReUz4",
     startTime: "17",
-  }, 
+  },
+  {
+    movie: "Aarzoo",
+    name: "Sajan Sajan Teri Dulhan",
+    youtubeId: "vvvDkFN9LUU",
+  },
+  {
+    movie: "Mere Brother Ki Dulhan",
+    name: "Do Dhaari Talwaar",
+    youtubeId: "m66aEQ3Ssdw",
+  },
+  {
+    movie: "Shamshera",
+    name: "Kaale Naina",
+    youtubeId: "Ieh-dXsR0OE",
+  },
+  {
+    movie: "Kalank",
+    name: "Ghar More Pardesiya",
+    youtubeId: "pp8vAFFc5E0",
+  },
+  {
+    movie: "Guru",
+    name: "Barso Re",
+    youtubeId: "xj_OHHWcPNw",
+  },
+  {
+    movie: "Veer-Zaara",
+    name: "Hum To Bhai Jaise Hain",
+    youtubeId: "c_L5nSf91zs",
+  },
+  {
+    movie: "Welcome Back",
+    name: "Tutti Bole Wedding Di",
+    youtubeId: "r2LwEwLiRhc",
+  },
+  {
+    movie: "Housefull 2",
+    name: "Right Now Now",
+    youtubeId: "m_4lF320DfQ",
+  },
+  {
+    movie: "Dostana",
+    name: "Maa Da Laadla",
+    youtubeId: "wVCZmXiK-6k",
+  },
+  {
+    movie: "Singh Is Bliing",
+    name: "Dil Kare Chu Che",
+    youtubeId: "4Lzih-SfYDM",
+  },
+  {
+    movie: "Hum Aapke Hain Koun",
+    name: "Maye Ni Maye",
+    youtubeId: "Ua5AW2czRAE",
+  },
+  {
+    movie: "Vivah",
+    name: "Milan Abhi Aadha Adhura Hai",
+    youtubeId: "bv5j1CUTVGM",
+  },
+  {
+    movie: "Fanaa",
+    name: "Des Rangila",
+    youtubeId: "drlfr5Rtb1o",
+  },
+  {
+    movie: "Kesari",
+    name: "Teri Mitti",
+    youtubeId: "wF_B_aagLfI",
+  },
+  {
+    movie: "Mimi",
+    name: "Param Sundari",
+    youtubeId: "nfNc0XJdZWk",
+  },
+  {
+    movie: "Raees",
+    name: "Laila Main Laila",
+    youtubeId: "95I5VaR7GeU",
+  },
+  {
+    movie: "Mubarakan",
+    name: "Hawa Hawa",
+    youtubeId: "2ll4IA146YI",
+  },
+  {
+    movie: "Student Of The Year 2",
+    name: "The Jawaani Song",
+    youtubeId: "osBCBg8WAsM",
+  },
+  {
+    movie: "Gori Tere Pyaar Mein",
+    name: "Tooh",
+    youtubeId: "91kbNw9DZBg",
+  },
 ];
