@@ -43,6 +43,8 @@ export function Player({
 
   const [play, setPlay] = React.useState<boolean>(false);
 
+  const [showPlayPrompt, setPlayPrompt] = React.useState<boolean>(true);
+
   const [currentTime, setCurrentTime] = React.useState<number>(0);
 
   const [isReady, setIsReady] = React.useState<boolean>(false);
@@ -74,6 +76,7 @@ export function Player({
 
   React.useEffect(() => {
     if (play) {
+      setPlayPrompt(false);
       if (currentTime * 1000 >= currentPlayTime) {
         playerRef.current?.internalPlayer.pauseVideo();
         playerRef.current?.internalPlayer.seekTo(startTime);
@@ -146,6 +149,11 @@ export function Player({
                 />
               </Styled.GeetleLogo>
             </Styled.GeetlePlayer>
+          )}
+          {showPlayPrompt && (
+            <p>
+              <b>Click the Geetle Logo above to start playing</b>
+            </p>
           )}
           {gameMode === "" && (
             <p>
