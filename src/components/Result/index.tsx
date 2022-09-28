@@ -1,5 +1,4 @@
 import React from "react";
-import { FcShare } from "react-icons/fc";
 import {
   CircularInput,
   CircularTrack,
@@ -11,6 +10,7 @@ import { Song } from "../../types/song";
 import { GuessType } from "../../types/guess";
 import { scoreToEmoji } from "../../helpers";
 import { playTimes } from "../../constants";
+import shareLogo from "../../assets/shareLogo.png";
 
 import { Button } from "../Button";
 import { YouTube } from "../YouTube";
@@ -90,14 +90,12 @@ export function Result({
             <line x1={-1} x2={17} y1={143} y2={135} stroke="#2C3088" />
           </CircularInput>
           <Styled.GeetleLogo>
-            <FcShare size={130} />
-            {/* TODO: add click leading to share */}
-            {/* <img
-              src={geetleLogo}
-              height="150"
+            <img
+              src={shareLogo}
+              height="120"
               style={{ cursor: "pointer" }}
-              onClick={startPlayback}
-            /> */}
+              onClick={() => void 0}
+            />
           </Styled.GeetleLogo>
         </Styled.GeetlePlayer>
 
