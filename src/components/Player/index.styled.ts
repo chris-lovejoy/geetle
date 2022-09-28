@@ -6,7 +6,7 @@ export const ProgressBackground = styled.div`
 
   width: 100%;
   height: 20px;
-  background-color: ${({ theme }) => theme.gray};
+  background-color: rgb(91, 100, 103);
   border-radius: 2px;
 
   margin-top: 5%;
