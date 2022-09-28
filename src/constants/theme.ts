@@ -9,4 +9,5 @@ export const theme = {
   green: "#4DBB60",
   red: "#FF0000",
   gray: "#E6E6E6",
+  pink: "rgb(177,81,147)",
 } as const;
