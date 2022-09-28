@@ -61,7 +61,7 @@ export const MastiMode = styled.p`
   font-family: "Helvetica", serif;
   margin-right: auto;
   margin-bottom: auto;
-  background: #2c3088;
+  background: rgb(75, 157, 140);
   border-radius: 25px;
   color: white;
   padding-top: 0px;
@@ -75,7 +75,7 @@ export const UstaadMode = styled.p`
   margin-right: auto;
   margin-bottom: auto;
   padding: 14px;
-  background: #47c98a;
+  background: rgb(172, 96, 156);
   border-radius: 25px;
   color: white;
   padding-top: 0px;

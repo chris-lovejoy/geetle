@@ -82,7 +82,7 @@ export function Result({
 
   if (didGuess) {
     const copyResult = React.useCallback(() => {
-      navigator.clipboard.writeText(scoreToEmoji(guesses));
+      navigator.clipboard.writeText(scoreToEmoji(guesses, gameMode));
       alert("Copied to clipboard!");
     }, [guesses]);
 
