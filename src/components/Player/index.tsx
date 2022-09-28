@@ -111,12 +111,60 @@ export function Player({
               <CircularInput value={currentTime / 16}>
                 <CircularTrack />
                 <CircularProgress stroke="#2C3088" />
-                <line x1={100} x2={100} y1={-10} y2={10} stroke="#2C3088" />
-                <line x1={143} x2={135} y1={-1} y2={17} stroke="#2C3088" />
-                <line x1={180} x2={166} y1={25} y2={38} stroke="#2C3088" />
-                <line x1={190} x2={210} y1={100} y2={100} stroke="#2C3088" />
-                <line x1={143} x2={135} y1={201} y2={183} stroke="#2C3088" />
-                <line x1={-1} x2={17} y1={143} y2={135} stroke="#2C3088" />
+                <line
+                  x1={100}
+                  x2={100}
+                  y1={-10}
+                  y2={10}
+                  stroke="#FFFFFF"
+                  height={100}
+                  strokeWidth={5}
+                />
+                <line
+                  x1={143}
+                  x2={135}
+                  y1={-1}
+                  y2={17}
+                  stroke="#FFFFFF"
+                  height={100}
+                  strokeWidth={5}
+                />
+                <line
+                  x1={180}
+                  x2={166}
+                  y1={25}
+                  y2={38}
+                  stroke="#FFFFFF"
+                  height={100}
+                  strokeWidth={5}
+                />
+                <line
+                  x1={190}
+                  x2={210}
+                  y1={100}
+                  y2={100}
+                  stroke="#FFFFFF"
+                  height={100}
+                  strokeWidth={5}
+                />
+                <line
+                  x1={143}
+                  x2={135}
+                  y1={201}
+                  y2={183}
+                  stroke="#FFFFFF"
+                  height={100}
+                  strokeWidth={5}
+                />
+                <line
+                  x1={-1}
+                  x2={17}
+                  y1={143}
+                  y2={135}
+                  stroke="#FFFFFF"
+                  height={100}
+                  strokeWidth={5}
+                />
               </CircularInput>
               <Styled.GeetleLogo>
                 <img
@@ -151,25 +199,25 @@ export function Player({
             </Styled.GeetlePlayer>
           )}
           {showPlayPrompt && (
-            <p>
+            <Styled.Paragraph>
               <b>Click the Geetle Logo above to start playing</b>
-            </p>
+            </Styled.Paragraph>
           )}
           {gameMode === "" && (
-            <p>
+            <Styled.Paragraph>
               <em>
                 Click the &apos;i&apos; in the top left to select a game mode.
               </em>
-            </p>
+            </Styled.Paragraph>
           )}
           <Styled.GamesRemaining>
             {gameMode === "Ustaad" && (
-              <p>
+              <Styled.Paragraph>
                 <b>
                   {Math.max(playLimits[currentTry] - numPlaysAtTry, 0)} plays
                   remaining
                 </b>
-              </p>
+              </Styled.Paragraph>
             )}
           </Styled.GamesRemaining>
         </>

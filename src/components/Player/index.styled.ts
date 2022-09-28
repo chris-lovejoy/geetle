@@ -67,6 +67,10 @@ export const TimeStamps = styled.div`
   width: 100%;
 `;
 
+export const Paragraph = styled.p`
+  color: ${({ theme }) => theme.header};
+`;
+
 export const TimeStamp = styled.p`
   color: ${({ theme }) => theme.text};
 `;

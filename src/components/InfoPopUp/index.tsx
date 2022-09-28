@@ -7,6 +7,8 @@ import {
 } from "react-icons/io5";
 import { Button } from "..";
 
+import geetleLogoWhite from "../../assets/geetleLogoWhite.png";
+
 import * as Styled from "./index.styled";
 
 interface Props {
@@ -24,7 +26,7 @@ export function InfoPopUp({ gameMode, onCloseMasti, onCloseUstaad }: Props) {
         <h1>Welcome to Geetle!</h1>
         <Styled.Spacer />
         <Styled.Section>
-          <IoMusicalNoteOutline size={50} />
+          <img src={geetleLogoWhite} height={35} />
           <p>
             Geetle is a daily Bollywood music game. The aim of the game is to
             guess the name of the song by hearing as little of the track as

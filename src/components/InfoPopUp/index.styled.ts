@@ -33,7 +33,7 @@ export const PopUp = styled.div`
     display: none;
   }
 
-  background-color: ${({ theme }) => theme.background100};
+  background-color: rgb(103, 112, 170);
 
   border-radius: 15px;
 
