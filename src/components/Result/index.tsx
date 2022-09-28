@@ -79,9 +79,7 @@ export function Result({
     return (
       <>
         <Styled.GeetlePlayer>
-          <CircularInput value={8 / 16}>
-            {/* TODO: update input time to the number of 
-            guesses they took based on currentTry */}
+          <CircularInput value={playTimes[currentTry - 1] / 16000}>
             <CircularTrack />
             <CircularProgress stroke="#2C3088" />
             <line x1={100} x2={100} y1={-10} y2={10} stroke="#2C3088" />
@@ -110,10 +108,7 @@ export function Result({
             {textForTryUstaad[currentTry - 1]}
           </Styled.ResultTitle>
         )}
-        <Styled.SongTitle>
-          Well Done!
-          {/* Today&apos;s song is {todaysSolution.movie} - {todaysSolution.name} */}
-        </Styled.SongTitle>
+        <Styled.SongTitle>Well Done!</Styled.SongTitle>
         <Styled.Tries>
           You correctly guessed today&apos;s Geetle in{" "}
           {playTimes[currentTry - 1] / 1000} {secondsConjugation}
