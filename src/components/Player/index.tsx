@@ -15,6 +15,7 @@ import * as Styled from "./index.styled";
 
 interface Props {
   id: string;
+  startTime: number;
   currentTry: number;
   numPlaysAtTry: number;
   gameMode: string;
@@ -23,6 +24,7 @@ interface Props {
 
 export function Player({
   id,
+  startTime,
   currentTry,
   numPlaysAtTry,
   gameMode,
@@ -48,19 +50,13 @@ export function Player({
   const [noPlaysRemaining, setNoPlaysRemaining] =
     React.useState<boolean>(false);
 
-  const customStart = 20;
-
-  React.useEffect(() => {
-    console.log("current time now", currentTime);
-  }, [currentTime]);
-
   React.useEffect(() => {
     setInterval(() => {
       playerRef.current?.internalPlayer
         .getCurrentTime()
         .then((time: number) => {
-          if (time >= customStart) {
-            setCurrentTime(time - customStart);
+          if (time >= startTime) {
+            setCurrentTime(time - startTime);
           }
         });
     }, 5);
@@ -80,7 +76,7 @@ export function Player({
     if (play) {
       if (currentTime * 1000 >= currentPlayTime) {
         playerRef.current?.internalPlayer.pauseVideo();
-        playerRef.current?.internalPlayer.seekTo(customStart);
+        playerRef.current?.internalPlayer.seekTo(startTime);
         setPlay(false);
       }
     }
@@ -88,7 +84,7 @@ export function Player({
 
   // don't call play video each time currentTime changes
   const startPlayback = React.useCallback(() => {
-    playerRef.current?.internalPlayer.seekTo(customStart);
+    playerRef.current?.internalPlayer.seekTo(startTime);
     playerRef.current?.internalPlayer.playVideo();
     setPlay(true);
     incrementPlays();

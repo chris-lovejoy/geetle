@@ -56,6 +56,7 @@ export function Game({
       ))} */}
       <Player
         id={todaysSolution.youtubeId}
+        startTime={todaysSolution.startTime}
         currentTry={currentTry}
         numPlaysAtTry={numPlaysAtTry}
         gameMode={gameMode}
