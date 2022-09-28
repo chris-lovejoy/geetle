@@ -71,7 +71,7 @@ export const TitleSection = styled.div`
   color: #ffffff;
 
   p {
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 0px;
   }
 
@@ -96,7 +96,7 @@ export const Contact = styled.p`
   a {
     color: ${({ theme }) => theme.text};
   }
-  margin-top: 5%;
+  margin-top: 1%;
 
   font-size: 0.9rem;
   font-weight: bold;
