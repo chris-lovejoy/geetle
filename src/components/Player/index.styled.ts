@@ -20,7 +20,7 @@ export const GeetlePlayer = styled.div`
 export const GeetleLogo = styled.div`
   position: absolute;
   top: 45px;
-  left: 80px;
+  left: 65px;
 
   img {
     -khtml-user-select: none;
