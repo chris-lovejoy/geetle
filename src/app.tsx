@@ -85,8 +85,7 @@ function App() {
     }
   }, []);
 
-  const [isInfoPopUpOpen, setIsInfoPopUpOpen] =
-    React.useState<boolean>(firstRun);
+  const [isInfoPopUpOpen, setIsInfoPopUpOpen] = React.useState<boolean>(true);
 
   const openInfoPopUp = React.useCallback(() => {
     setIsInfoPopUpOpen(true);
