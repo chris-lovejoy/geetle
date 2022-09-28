@@ -46,7 +46,7 @@ export const Logo = styled.div`
   h1 {
     color: ${({ theme }) => theme.header};
     font-family: "Helvetica", serif;
-    font-size: 62px;
+    font-size: 48px;
     text-transform: uppercase;
     width: max-content;
     margin-block-start: 0px;

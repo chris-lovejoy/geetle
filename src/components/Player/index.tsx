@@ -9,7 +9,7 @@ import {
 import { event } from "react-ga";
 
 import { playTimes, playLimits } from "../../constants";
-import geetleLogo from "./geetleLogo.png";
+import geetleLogo from "../../assets/geetleLogo.png";
 
 import * as Styled from "./index.styled";
 
