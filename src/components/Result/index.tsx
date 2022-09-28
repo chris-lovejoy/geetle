@@ -1,4 +1,11 @@
 import React from "react";
+import { FcShare } from "react-icons/fc";
+import {
+  CircularInput,
+  CircularTrack,
+  CircularProgress,
+  CircularThumb,
+} from "react-circular-input";
 
 import { Song } from "../../types/song";
 import { GuessType } from "../../types/guess";
@@ -69,6 +76,31 @@ export function Result({
 
     return (
       <>
+        <Styled.GeetlePlayer>
+          <CircularInput value={8 / 16}>
+            {/* TODO: update input time to the number of 
+            guesses they took based on currentTry */}
+            <CircularTrack />
+            <CircularProgress stroke="#2C3088" />
+            <line x1={100} x2={100} y1={-10} y2={10} stroke="#2C3088" />
+            <line x1={143} x2={135} y1={-1} y2={17} stroke="#2C3088" />
+            <line x1={180} x2={166} y1={25} y2={38} stroke="#2C3088" />
+            <line x1={190} x2={210} y1={100} y2={100} stroke="#2C3088" />
+            <line x1={143} x2={135} y1={201} y2={183} stroke="#2C3088" />
+            <line x1={-1} x2={17} y1={143} y2={135} stroke="#2C3088" />
+          </CircularInput>
+          <Styled.GeetleLogo>
+            <FcShare size={130} />
+            {/* TODO: add click leading to share */}
+            {/* <img
+              src={geetleLogo}
+              height="150"
+              style={{ cursor: "pointer" }}
+              onClick={startPlayback}
+            /> */}
+          </Styled.GeetleLogo>
+        </Styled.GeetlePlayer>
+
         {gameMode == "Masti" && (
           <Styled.ResultTitle>
             {textForTryMasti[currentTry - 1]}
