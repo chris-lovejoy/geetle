@@ -13,14 +13,14 @@ export const ProgressBackground = styled.div`
 `;
 
 export const GeetlePlayer = styled.div`
-  margin: 60px;
+  margin: 10px;
   position: relative;
 `;
 
 export const GeetleLogo = styled.div`
   position: absolute;
-  top: 30px;
-  left: 40px;
+  top: 45px;
+  left: 80px;
 
   img {
     -khtml-user-select: none;

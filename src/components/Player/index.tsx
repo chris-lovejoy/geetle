@@ -108,7 +108,7 @@ export function Player({
         <>
           {!noPlaysRemaining && (
             <Styled.GeetlePlayer>
-              <CircularInput value={currentTime / 16}>
+              <CircularInput value={currentTime / 16} radius={190}>
                 <CircularTrack />
                 <CircularProgress stroke="#2C3088" />
                 <line
@@ -169,7 +169,7 @@ export function Player({
               <Styled.GeetleLogo>
                 <img
                   src={geetleLogo}
-                  height="150"
+                  height="300"
                   style={{ cursor: "pointer" }}
                   onClick={startPlayback}
                 />
