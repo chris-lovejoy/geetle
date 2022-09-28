@@ -33,6 +33,14 @@ export function Result({
       60
   );
 
+  const minsToNextDay = Math.floor(
+    ((new Date(new Date().setHours(24, 0, 0, 0)).getTime() -
+      new Date().getTime()) /
+      1000 /
+      60) %
+      60
+  );
+
   const textForTryMasti = [
     "Jo Jeeta Wohi Sikander!",
     "Where’s The Party Tonight?!",
@@ -84,7 +92,8 @@ export function Result({
           Share your result
         </Button>
         <Styled.TimeToNext>
-          Come back in {hoursToNextDay} hours to play again!
+          Come back in {hoursToNextDay} hours and {minsToNextDay} minutes to
+          play again!
         </Styled.TimeToNext>
       </>
     );
@@ -102,8 +111,8 @@ export function Result({
         </Styled.SongTitle>
         <YouTube id={todaysSolution.youtubeId} />
         <Styled.TimeToNext>
-          Come back tomorrow to try again - the song will be updated in:{" "}
-          {hoursToNextDay} hours!
+          Come back tomorrow to try again - the song will be updated in{" "}
+          {hoursToNextDay} hours and {minsToNextDay} minutes!
         </Styled.TimeToNext>
       </>
     );
