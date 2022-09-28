@@ -11,6 +11,8 @@ import { GuessType } from "../../types/guess";
 import { scoreToEmoji } from "../../helpers";
 import { playTimes } from "../../constants";
 import shareLogo from "../../assets/shareLogo.png";
+import twitterLogo from "../../assets/twitterLogo.png";
+import instagramLogo from "../../assets/instagramLogo.png";
 
 import { Button } from "../Button";
 import { YouTube } from "../YouTube";
@@ -119,7 +121,8 @@ export function Result({
         <YouTube id={todaysSolution.youtubeId} />
         <Styled.TimeToNext>
           Come back in {hoursToNextDay} hours and {minsToNextDay} minutes to
-          play again!
+          play again! <img src={instagramLogo} height="20" />
+          <img src={twitterLogo} height="20" />
         </Styled.TimeToNext>
       </>
     );
