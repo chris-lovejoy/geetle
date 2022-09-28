@@ -55,7 +55,7 @@ export function Player({
         .then((time: number) => {
           setCurrentTime(time);
         });
-    }, 250);
+    }, 5);
   }, []);
 
   React.useEffect(() => {
