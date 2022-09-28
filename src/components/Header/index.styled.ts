@@ -45,7 +45,7 @@ export const Logo = styled.div`
   margin-left: auto;
   h1 {
     color: ${({ theme }) => theme.header};
-    font-family: "Mukta", serif;
+    font-family: "Helvetica", serif;
     font-size: 62px;
     text-transform: uppercase;
     width: max-content;
@@ -58,6 +58,7 @@ export const Logo = styled.div`
 `;
 
 export const MastiMode = styled.p`
+  font-family: "Helvetica", serif;
   margin-right: auto;
   margin-bottom: auto;
   background: #2c3088;
@@ -70,6 +71,7 @@ export const MastiMode = styled.p`
 `;
 
 export const UstaadMode = styled.p`
+  font-family: "Helvetica", serif;
   margin-right: auto;
   margin-bottom: auto;
   padding: 14px;
