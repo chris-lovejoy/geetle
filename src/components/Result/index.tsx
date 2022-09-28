@@ -69,6 +69,17 @@ export function Result({
   const textForFailMasti = "Apna Time Aayega!";
   const textForFailUstaad = "Haar Kar Jeetne Wale Ko BAAZIGAR Kehte Hai!";
 
+  const openTwitter = () => {
+    window.open(
+      "https://twitter.com/_Geetle_?t=9GMUMaytMHDG-dKBWTLEFQ&s=08",
+      "_blank"
+    );
+  };
+
+  const openInstagram = () => {
+    window.open("https://www.instagram.com/geetle_?r=nametag", "_blank");
+  };
+
   if (didGuess) {
     const copyResult = React.useCallback(() => {
       navigator.clipboard.writeText(scoreToEmoji(guesses));
@@ -98,6 +109,10 @@ export function Result({
             />
           </Styled.GeetleLogo>
         </Styled.GeetlePlayer>
+        <p>
+          <img src={instagramLogo} height="45" onClick={openInstagram} />
+          <img src={twitterLogo} height="45" onClick={openTwitter} />
+        </p>
         {gameMode == "Masti" && (
           <Styled.ResultTitle>
             {textForTryMasti[currentTry - 1]}
@@ -116,8 +131,7 @@ export function Result({
         <YouTube id={todaysSolution.youtubeId} />
         <Styled.TimeToNext>
           Come back in {hoursToNextDay} hours and {minsToNextDay} minutes to
-          play again! <img src={instagramLogo} height="20" />
-          <img src={twitterLogo} height="20" />
+          play again!
         </Styled.TimeToNext>
       </>
     );
