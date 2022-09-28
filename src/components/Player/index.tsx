@@ -110,7 +110,7 @@ export function Player({
             <Styled.GeetlePlayer>
               <CircularInput value={currentTime / 16} radius={150}>
                 <CircularTrack />
-                <CircularProgress stroke="#2C3088" />
+                <CircularProgress stroke="#2C3088" strokeLinecap="butt" />
                 <line
                   x1={150}
                   x2={150}
@@ -180,7 +180,7 @@ export function Player({
             <Styled.GeetlePlayer>
               <CircularInput value={currentTime / 16}>
                 <CircularTrack />
-                <CircularProgress stroke="#2C3088" />
+                <CircularProgress stroke="#2C3088" strokeLinecap="butt" />
                 <line
                   x1={150}
                   x2={150}
