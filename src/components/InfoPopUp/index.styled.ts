@@ -23,11 +23,11 @@ export const PopUp = styled.div`
   @media (max-width: 768px) {
     width: 80%;
   }
-  padding: 20px;
+  padding: 15px;
 
   background-color: ${({ theme }) => theme.background100};
 
-  border-radius: 10px;
+  border-radius: 15px;
 
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@ export const Spacer = styled.div`
   width: 70%;
   height: 0.2px;
 
-  margin: 20px 0;
+  margin: 8px 0;
 
   background-color: ${({ theme }) => theme.text};
   opacity: 0.5;
