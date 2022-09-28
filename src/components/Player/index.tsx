@@ -48,12 +48,20 @@ export function Player({
   const [noPlaysRemaining, setNoPlaysRemaining] =
     React.useState<boolean>(false);
 
+  const customStart = 20;
+
+  React.useEffect(() => {
+    console.log("current time now", currentTime);
+  }, [currentTime]);
+
   React.useEffect(() => {
     setInterval(() => {
       playerRef.current?.internalPlayer
         .getCurrentTime()
         .then((time: number) => {
-          setCurrentTime(time);
+          if (time >= customStart) {
+            setCurrentTime(time - customStart);
+          }
         });
     }, 5);
   }, []);
@@ -72,7 +80,7 @@ export function Player({
     if (play) {
       if (currentTime * 1000 >= currentPlayTime) {
         playerRef.current?.internalPlayer.pauseVideo();
-        playerRef.current?.internalPlayer.seekTo(0);
+        playerRef.current?.internalPlayer.seekTo(customStart);
         setPlay(false);
       }
     }
@@ -80,6 +88,7 @@ export function Player({
 
   // don't call play video each time currentTime changes
   const startPlayback = React.useCallback(() => {
+    playerRef.current?.internalPlayer.seekTo(customStart);
     playerRef.current?.internalPlayer.playVideo();
     setPlay(true);
     incrementPlays();
