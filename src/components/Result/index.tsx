@@ -71,7 +71,9 @@ export function Result({
 
   const openTwitter = () => {
     window.open(
-      "https://twitter.com/geetle_app", "_blank");
+      "https://twitter.com/geetle_app", 
+      "_blank"
+    );
   };
 
   const openInstagram = () => {
