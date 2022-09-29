@@ -4,7 +4,7 @@ export function scoreToEmoji(guesses: GuessType[], gameMode: string): string {
   const emojis = {
     incorrect: "⭕",
     correctMasti: "🟢",
-    correctUstaad: " 🟣",
+    correctUstaad: "🟣",
     skip: "⚪️",
     empty: "⚫️",
   };
