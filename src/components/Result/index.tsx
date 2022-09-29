@@ -71,7 +71,7 @@ export function Result({
 
   const openTwitter = () => {
     window.open(
-      "https://twitter.com/_Geetle_?t=9GMUMaytMHDG-dKBWTLEFQ&s=08",
+      "https://twitter.com/Geetle_app?t=mmkw6oUqH31eYoqfNMG_sg&s=08",
       "_blank"
     );
   };
