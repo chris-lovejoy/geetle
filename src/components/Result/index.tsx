@@ -71,13 +71,11 @@ export function Result({
 
   const openTwitter = () => {
     window.open(
-      "https://twitter.com/_Geetle_?t=9GMUMaytMHDG-dKBWTLEFQ&s=08",
-      "_blank"
-    );
+      "https://twitter.com/geetle_app");
   };
 
   const openInstagram = () => {
-    window.open("https://www.instagram.com/geetle_?r=nametag", "_blank");
+    window.open("https://www.instagram.com/geetle_app");
   };
 
   if (didGuess) {
