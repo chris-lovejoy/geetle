@@ -71,11 +71,11 @@ export function Result({
 
   const openTwitter = () => {
     window.open(
-      "https://twitter.com/geetle_app");
+      "https://twitter.com/geetle_app", "_blank");
   };
 
   const openInstagram = () => {
-    window.open("https://www.instagram.com/geetle_app");
+    window.open("https://www.instagram.com/geetle_app", "_blank");
   };
 
   if (didGuess) {
