@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   position: absolute;
   top: 0;
-  z-index: 2;
+  z-index: 5;
 
   font-family: "Helvetica", serif;
 
