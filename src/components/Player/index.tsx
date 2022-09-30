@@ -114,33 +114,33 @@ export function Player({
                 <line
                   x1={150}
                   x2={150}
-                  y1={-15}
-                  y2={15}
+                  y1={-10}
+                  y2={10}
                   stroke="#FFFFFF"
                   height={100}
                   strokeWidth={5}
                 />
                 <line
-                  x1={214.5}
-                  x2={202.5}
-                  y1={-1.5}
-                  y2={25.5}
+                  x1={212}
+                  x2={204}
+                  y1={3}
+                  y2={21}
                   stroke="#FFFFFF"
                   height={100}
                   strokeWidth={5}
                 />
                 <line
-                  x1={270}
-                  x2={249}
-                  y1={32.5}
-                  y2={57}
+                  x1={266}
+                  x2={252}
+                  y1={39}
+                  y2={53}
                   stroke="#FFFFFF"
                   height={100}
                   strokeWidth={5}
                 />
                 <line
-                  x1={285}
-                  x2={365}
+                  x1={290}
+                  x2={310}
                   y1={150}
                   y2={150}
                   stroke="#FFFFFF"
@@ -148,19 +148,19 @@ export function Player({
                   strokeWidth={5}
                 />
                 <line
-                  x1={214.5}
-                  x2={202.5}
-                  y1={301.5}
-                  y2={274.5}
+                  x1={215}
+                  x2={206}
+                  y1={296}
+                  y2={278}
                   stroke="#FFFFFF"
                   height={100}
                   strokeWidth={5}
                 />
                 <line
-                  x1={-1.5}
-                  x2={25.5}
-                  y1={214.5}
-                  y2={202.5}
+                  x1={4}
+                  x2={22}
+                  y1={215}
+                  y2={206}
                   stroke="#FFFFFF"
                   height={100}
                   strokeWidth={5}
@@ -184,33 +184,33 @@ export function Player({
                 <line
                   x1={150}
                   x2={150}
-                  y1={-15}
-                  y2={15}
+                  y1={-10}
+                  y2={10}
                   stroke="#FFFFFF"
                   height={100}
                   strokeWidth={5}
                 />
                 <line
-                  x1={214.5}
-                  x2={202.5}
-                  y1={-1.5}
-                  y2={25.5}
+                  x1={212}
+                  x2={204}
+                  y1={3}
+                  y2={21}
                   stroke="#FFFFFF"
                   height={100}
                   strokeWidth={5}
                 />
                 <line
-                  x1={270}
-                  x2={249}
-                  y1={32.5}
-                  y2={57}
+                  x1={266}
+                  x2={252}
+                  y1={39}
+                  y2={53}
                   stroke="#FFFFFF"
                   height={100}
                   strokeWidth={5}
                 />
                 <line
-                  x1={285}
-                  x2={365}
+                  x1={290}
+                  x2={310}
                   y1={150}
                   y2={150}
                   stroke="#FFFFFF"
@@ -218,19 +218,19 @@ export function Player({
                   strokeWidth={5}
                 />
                 <line
-                  x1={214.5}
-                  x2={202.5}
-                  y1={301.5}
-                  y2={274.5}
+                  x1={215}
+                  x2={206}
+                  y1={296}
+                  y2={278}
                   stroke="#FFFFFF"
                   height={100}
                   strokeWidth={5}
                 />
                 <line
-                  x1={-1.5}
-                  x2={25.5}
-                  y1={214.5}
-                  y2={202.5}
+                  x1={4}
+                  x2={22}
+                  y1={215}
+                  y2={206}
                   stroke="#FFFFFF"
                   height={100}
                   strokeWidth={5}
