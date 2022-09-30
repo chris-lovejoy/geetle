@@ -9,7 +9,14 @@ export function scoreToEmoji(guesses: GuessType[], gameMode: string): string {
     empty: "⚫️",
   };
   const todaysDate = new Date();
-  const prefix = `Geetle - ${todaysDate.toLocaleDateString()} 🎧`;
+
+  let prefix = "";
+
+  if (gameMode === "Masti") {
+    prefix += `Geetle - ${todaysDate.toLocaleDateString()} Masti 🎧`;
+  } else if (gameMode === "Ustaad") {
+    prefix += `Geetle - ${todaysDate.toLocaleDateString()} Ustaad 🎧`;
+  }
 
   let scoreEmoji = "";
 

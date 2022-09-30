@@ -93,7 +93,7 @@ export function Result({
         <Styled.GeetlePlayer>
           <CircularInput value={playTimes[currentTry - 1] / 16000}>
             <CircularTrack />
-            <CircularProgress stroke="#2C3088" />
+            <CircularProgress stroke="#2C3088" strokeLinecap="butt" />
             <line x1={100} x2={100} y1={-10} y2={10} stroke="#2C3088" />
             <line x1={143} x2={135} y1={-1} y2={17} stroke="#2C3088" />
             <line x1={180} x2={166} y1={25} y2={38} stroke="#2C3088" />
