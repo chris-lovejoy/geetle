@@ -22,16 +22,9 @@ export const PopUp = styled.div`
   max-width: 500px;
   @media (max-width: 768px) {
     width: 80%;
+    overflow: auto;
   }
   padding: 15px;
-
-  height: 470px;
-  overflow: auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  ::-webkit-scrollbar {
-    display: none;
-  }
 
   background-color: rgb(103, 112, 170);
 
