@@ -22,6 +22,7 @@ export const PopUp = styled.div`
   max-width: 500px;
   @media (max-width: 768px) {
     width: 80%;
+    height: 400px;
     overflow: auto;
   }
   padding: 15px;
