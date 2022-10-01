@@ -67,7 +67,7 @@ export function Result({
     "Kar Har Maidan Fateh!",
   ];
   const textForFailMasti = "Apna Time Aayega!";
-  const textForFailUstaad = "Haar Kar Jeetne Wale Ko BAAZIGAR Kehte Hai!";
+  const textForFailUstaad = "Picture Abhi Baaki Hai Mere Dost!";
 
   const openTwitter = () => {
     window.open(
