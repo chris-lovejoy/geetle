@@ -12,12 +12,6 @@ export const songs = [
     startTime: 0,
   },
   {
-    movie: "Tashan",
-    name: "Falak Tak",
-    youtubeId: "vr8RaNuWjWc",
-    startTime: 0,
-  },
-  {
     movie: "Dilwale Dulhania Le Jayenge",
     name: "Ruk Ja O Dil Deewane",
     youtubeId: "jBpRItrod-Q",
@@ -298,6 +292,12 @@ export const songs = [
     name: "Lucky Tu Lucky Me",
     youtubeId: "LwvU3DG9qrU",
     startTime: 52,
+  },
+  {
+    movie: "Tashan",
+    name: "Falak Tak",
+    youtubeId: "vr8RaNuWjWc",
+    startTime: 0,
   },
   {
     movie: "Happy New Year",
