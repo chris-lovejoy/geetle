@@ -89,7 +89,6 @@ export const Result = styled.div`
 
   background-color: ${({ theme }) => theme.background100};
 
-  border-color: ${({ theme }) => theme.border};
   border-width: 1px;
   border-radius: 5px;
   border-style: solid;
