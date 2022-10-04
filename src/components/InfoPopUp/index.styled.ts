@@ -18,8 +18,8 @@ export const Container = styled.div`
 `;
 
 export const PopUp = styled.div`
-  width: 90%;
-  max-width: 500px;
+  width: 95%;
+  max-width: 550px;
   @media (max-width: 768px) {
     width: 80%;
     height: 400px;
@@ -80,6 +80,7 @@ export const Section = styled.div`
   align-items: center;
   justify-content: space-between;
   color: #ffffff;
+  text-align: center;
 
   a {
     color: ${({ theme }) => theme.text};

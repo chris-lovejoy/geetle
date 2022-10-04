@@ -31,6 +31,10 @@ export function InfoPopUp({ gameMode, onCloseMasti, onCloseUstaad }: Props) {
             Geetle is a daily Bollywood music game. The aim of the game is to
             guess the name of the song by hearing as little of the track as
             possible.
+          </p>
+        </Styled.Section>
+        <Styled.Section>
+          <p>
             <b>There are two modes of play:</b>
           </p>
         </Styled.Section>
