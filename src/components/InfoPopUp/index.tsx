@@ -40,10 +40,14 @@ export function InfoPopUp({ gameMode, onCloseMasti, onCloseUstaad }: Props) {
         </Styled.Section>
         <Styled.TitleSection>
           <p>
-            <b>Masti</b>
+            <b>
+              <u>Masti</u>
+            </b>
           </p>
           <p>
-            <b>Ustaad</b>
+            <b>
+              <u>Ustaad</u>
+            </b>
           </p>
         </Styled.TitleSection>
         <Styled.Section>
