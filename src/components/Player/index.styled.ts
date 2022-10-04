@@ -16,6 +16,12 @@ export const GeetlePlayer = styled.div`
   margin: 15px;
   position: relative;
   z-index: 2;
+
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 `;
 
 export const GeetleLogo = styled.div`

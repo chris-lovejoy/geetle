@@ -19,10 +19,9 @@ export const Container = styled.div`
 
 export const PopUp = styled.div`
   width: 90%;
-  max-width: 500px;
+  max-width: 550px;
   @media (max-width: 768px) {
-    width: 80%;
-    height: 400px;
+    width: 95%;
     overflow: auto;
   }
   padding: 15px;
@@ -37,7 +36,7 @@ export const PopUp = styled.div`
   justify-content: center;
 
   h1 {
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 0;
     color: #ffffff;
   }
@@ -59,7 +58,19 @@ export const Spacer = styled.div`
 
 export const TitleSection = styled.div`
   display: flex;
-  gap: 140px;
+
+  @media (min-width: 768px) {
+    gap: 225px;
+  }
+
+  @media (min-width: 400px) and (max-width: 768px) {
+    gap: 180px;
+  }
+
+  @media (max-width: 400px) {
+    gap: 100px;
+  }
+
   align-items: center;
   justify-content: space-between;
   color: #ffffff;
@@ -80,6 +91,7 @@ export const Section = styled.div`
   align-items: center;
   justify-content: space-between;
   color: #ffffff;
+  text-align: center;
 
   a {
     color: ${({ theme }) => theme.text};
@@ -90,7 +102,7 @@ export const Contact = styled.p`
   a {
     color: ${({ theme }) => theme.text};
   }
-  margin-top: 1%;
+  margin-top: 3%;
 
   font-size: 0.9rem;
   font-weight: bold;

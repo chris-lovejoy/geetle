@@ -31,15 +31,23 @@ export function InfoPopUp({ gameMode, onCloseMasti, onCloseUstaad }: Props) {
             Geetle is a daily Bollywood music game. The aim of the game is to
             guess the name of the song by hearing as little of the track as
             possible.
+          </p>
+        </Styled.Section>
+        <Styled.Section>
+          <p>
             <b>There are two modes of play:</b>
           </p>
         </Styled.Section>
         <Styled.TitleSection>
           <p>
-            <b>Masti</b>
+            <b>
+              <u>Masti</u>
+            </b>
           </p>
           <p>
-            <b>Ustaad</b>
+            <b>
+              <u>Ustaad</u>
+            </b>
           </p>
         </Styled.TitleSection>
         <Styled.Section>
@@ -63,7 +71,7 @@ export function InfoPopUp({ gameMode, onCloseMasti, onCloseUstaad }: Props) {
               Play Masti
             </Button>
             <Button
-              variant="red"
+              variant="pink"
               style={{ marginTop: 20 }}
               onClick={onCloseUstaad}
             >
@@ -81,7 +89,7 @@ export function InfoPopUp({ gameMode, onCloseMasti, onCloseUstaad }: Props) {
               Play Masti
             </Button>
             <Button
-              variant="red"
+              variant="pink"
               style={{ marginTop: 20 }}
               onClick={onCloseUstaad}
             >
@@ -125,7 +133,7 @@ export function InfoPopUp({ gameMode, onCloseMasti, onCloseUstaad }: Props) {
                 Play Masti
               </Button>
               <Button
-                variant="red"
+                variant="pink"
                 style={{ marginTop: 20 }}
                 onClick={onCloseUstaad}
               >

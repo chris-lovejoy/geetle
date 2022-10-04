@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const ResultTitle = styled.h1`
+  text-align: center;
   @media (max-width: 768px) {
-    text-align: center;
     width: 100%;
   }
+  margin: 0;
 `;
 
 export const Tries = styled.h4`
@@ -13,11 +14,12 @@ export const Tries = styled.h4`
     width: 100%;
   }
 
-  margin-top: 0;
+  margin: 0;
 `;
 
 export const GeetlePlayer = styled.div`
-  margin: 60px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   position: relative;
 `;
 
@@ -35,13 +37,20 @@ export const GeetleLogo = styled.div`
   }
 `;
 
+export const Social = styled.div`
+  p {
+    margin-top: 0;
+  }
+`;
+
 export const SongTitle = styled.h3`
   @media (max-width: 768px) {
     text-align: center;
     width: 100%;
   }
 
-  margin-top: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 `;
 
 export const TimeToNext = styled.h4`
@@ -49,4 +58,5 @@ export const TimeToNext = styled.h4`
     text-align: center;
     width: 100%;
   }
+  margin: 0;
 `;
