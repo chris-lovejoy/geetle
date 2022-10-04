@@ -60,12 +60,16 @@ export const Spacer = styled.div`
 export const TitleSection = styled.div`
   display: flex;
 
-  @media (min-width: 500px) {
+  @media (min-width: 768px) {
     gap: 225px;
   }
 
-  @media (max-width: 500px) {
-    gap: 40px;
+  @media (min-width: 400px) {
+    gap: 125px;
+  }
+
+  @media (max-width: 400px) {
+    gap: 75px;
   }
 
   align-items: center;
