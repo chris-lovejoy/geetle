@@ -167,6 +167,10 @@ function App() {
       setDidGuess(true);
     }
 
+    if (!isCorrect) {
+      alert("Incorrect guess - have another go!");
+    }
+
     event({
       category: "Game",
       action: "Guess",

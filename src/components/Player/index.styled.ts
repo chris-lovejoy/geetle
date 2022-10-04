@@ -24,7 +24,7 @@ export const GeetlePlayer = styled.div`
   -webkit-tap-highlight-color: transparent;
   user-select: none;
   -webkit-touch-callout: none;
-  -ms-user-select: none; 
+  -ms-user-select: none;
 `;
 
 export const GeetleLogo = styled.div`
@@ -41,7 +41,7 @@ export const GeetleLogo = styled.div`
     user-select: none;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
-    -ms-user-select: none; 
+    -ms-user-select: none;
   }
 `;
 
