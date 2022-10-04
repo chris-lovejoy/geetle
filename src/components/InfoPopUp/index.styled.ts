@@ -69,7 +69,7 @@ export const TitleSection = styled.div`
   }
 
   @media (max-width: 400px) {
-    gap: 75px;
+    gap: 100px;
   }
 
   align-items: center;
