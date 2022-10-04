@@ -71,7 +71,7 @@ export function InfoPopUp({ gameMode, onCloseMasti, onCloseUstaad }: Props) {
               Play Masti
             </Button>
             <Button
-              variant="red"
+              variant="pink"
               style={{ marginTop: 20 }}
               onClick={onCloseUstaad}
             >
@@ -89,7 +89,7 @@ export function InfoPopUp({ gameMode, onCloseMasti, onCloseUstaad }: Props) {
               Play Masti
             </Button>
             <Button
-              variant="red"
+              variant="pink"
               style={{ marginTop: 20 }}
               onClick={onCloseUstaad}
             >
@@ -133,7 +133,7 @@ export function InfoPopUp({ gameMode, onCloseMasti, onCloseUstaad }: Props) {
                 Play Masti
               </Button>
               <Button
-                variant="red"
+                variant="pink"
                 style={{ marginTop: 20 }}
                 onClick={onCloseUstaad}
               >
