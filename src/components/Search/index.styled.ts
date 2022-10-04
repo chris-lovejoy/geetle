@@ -80,8 +80,6 @@ export const ResultsContainer = styled.div`
   justify-content: flex-end;
 
   width: 100%;
-
-  overflow-y: scroll;
 `;
 
 export const Result = styled.div`
