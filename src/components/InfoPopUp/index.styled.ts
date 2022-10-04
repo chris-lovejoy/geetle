@@ -93,6 +93,13 @@ export const Section = styled.div`
   color: #ffffff;
   text-align: center;
 
+  p {
+    @media (max-width: 400px) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
   a {
     color: ${({ theme }) => theme.text};
   }
@@ -102,7 +109,7 @@ export const Contact = styled.p`
   a {
     color: ${({ theme }) => theme.text};
   }
-  margin-top: 3%;
+  margin-top: 1%;
 
   font-size: 0.9rem;
   font-weight: bold;

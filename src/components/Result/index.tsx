@@ -110,10 +110,12 @@ export function Result({
             />
           </Styled.GeetleLogo>
         </Styled.GeetlePlayer>
-        <p>
-          <img src={instagramLogo} height="45" onClick={openInstagram} />
-          <img src={twitterLogo} height="45" onClick={openTwitter} />
-        </p>
+        <Styled.Social>
+          <p>
+            <img src={instagramLogo} height="45" onClick={openInstagram} />
+            <img src={twitterLogo} height="45" onClick={openTwitter} />
+          </p>
+        </Styled.Social>
         {gameMode == "Masti" && (
           <Styled.ResultTitle>
             {textForTryMasti[currentTry - 1]}
