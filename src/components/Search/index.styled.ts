@@ -5,6 +5,8 @@ export const Container = styled.div`
 
   width: 100%;
 
+  z-index: 4;
+
   margin-top: 5%;
 `;
 

@@ -102,7 +102,7 @@ export const Contact = styled.p`
   a {
     color: ${({ theme }) => theme.text};
   }
-  margin-top: 1%;
+  margin-top: 3%;
 
   font-size: 0.9rem;
   font-weight: bold;
