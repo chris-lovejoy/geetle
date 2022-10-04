@@ -64,8 +64,8 @@ export const TitleSection = styled.div`
     gap: 225px;
   }
 
-  @media (min-width: 400px) {
-    gap: 125px;
+  @media (min-width: 400px) and (max-width: 768px) {
+    gap: 180px;
   }
 
   @media (max-width: 400px) {
