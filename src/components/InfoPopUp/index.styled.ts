@@ -18,11 +18,10 @@ export const Container = styled.div`
 `;
 
 export const PopUp = styled.div`
-  width: 95%;
+  width: 90%;
   max-width: 550px;
   @media (max-width: 768px) {
-    width: 80%;
-    height: 400px;
+    width: 95%;
     overflow: auto;
   }
   padding: 15px;
@@ -37,7 +36,7 @@ export const PopUp = styled.div`
   justify-content: center;
 
   h1 {
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 0;
     color: #ffffff;
   }
