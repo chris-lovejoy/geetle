@@ -59,7 +59,15 @@ export const Spacer = styled.div`
 
 export const TitleSection = styled.div`
   display: flex;
-  gap: 225px;
+  
+  @media (min-width: 500px) {
+    gap: 225px;
+  }
+
+  @media (max-width: 500px) {
+    gap: 40px;
+  }
+  
   align-items: center;
   justify-content: space-between;
   color: #ffffff;
