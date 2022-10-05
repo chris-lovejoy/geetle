@@ -149,7 +149,7 @@ export function InfoPopUp({ gameMode, onCloseMasti, onCloseUstaad }: Props) {
         )}
         <Styled.Contact>
           Developed by{" "}
-          <a href="mailto:dev@chrislovejoy.me">dev@chrislovejoy.me</a>
+          <a href="https://chrislovejoy.me">Chris Lovejoy</a>
         </Styled.Contact>
       </Styled.PopUp>
     </Styled.Container>
