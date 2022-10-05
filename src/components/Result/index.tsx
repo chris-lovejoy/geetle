@@ -51,8 +51,8 @@ export function Result({
   );
 
   const textForTryMasti = [
-    "Jo Jeeta Wohi Sikander!",
-    "Where’s The Party Tonight?!",
+    "Dhoom Machale!",
+    "Dil Bole Hadippa!",
     "It’s The Time To Disco!",
     "All Izz Well!",
     "Hum Kisi Se Kam Nahi!",
