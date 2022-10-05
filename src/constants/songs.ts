@@ -36,6 +36,12 @@ export const songs = [
     startTime: 0,
   },
   {
+    movie: "Baar Baar Dekho",
+    name: "Kala Chashma",
+    youtubeId: "k4yXQkG2s1E",
+    startTime: 0,
+  },
+  {
     movie: "Rab Ne Bana Di Jodi",
     name: "Tujh Mein Rab Dikta Hain",
     youtubeId: "qoq8B8ThgEM",
@@ -99,12 +105,6 @@ export const songs = [
     movie: "Singh Is Kinng",
     name: "Jee Karda",
     youtubeId: "40IlftR0R_U",
-    startTime: 0,
-  },
-  {
-    movie: "Baar Baar Dekho",
-    name: "Kala Chashma",
-    youtubeId: "k4yXQkG2s1E",
     startTime: 0,
   },
   {
