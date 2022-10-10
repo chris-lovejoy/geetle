@@ -68,8 +68,8 @@ export const songs = [
   {
     movie: "Namak Halaal",
     name: "Ke Pag Ghunghroo Bandh Meera",
-    youtubeId: "cTvUrpSr9ck",
-    startTime: 0,
+    youtubeId: "SzxeWJjjVd4",
+    startTime: 19,
   },
   {
     movie: "Band Baaja Baaraat",
