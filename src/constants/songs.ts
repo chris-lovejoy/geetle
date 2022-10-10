@@ -66,6 +66,12 @@ export const songs = [
     startTime: 1,
   },
   {
+    movie: "Namak Halaal",
+    name: "Ke Pag Ghunghroo Bandh Meera",
+    youtubeId: "pElk1ShPrcE",
+    startTime: 0,
+  },
+  {
     movie: "Band Baaja Baaraat",
     name: "Ainvayi Ainvayi",
     youtubeId: "pElk1ShPrcE",
@@ -292,12 +298,6 @@ export const songs = [
     name: "Lucky Tu Lucky Me",
     youtubeId: "LwvU3DG9qrU",
     startTime: 52,
-  },
-  {
-    movie: "Tashan",
-    name: "Falak Tak",
-    youtubeId: "vr8RaNuWjWc",
-    startTime: 0,
   },
   {
     movie: "Happy New Year",
