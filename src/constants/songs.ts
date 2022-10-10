@@ -63,7 +63,7 @@ export const songs = [
     movie: "Dil Dhadakne Do",
     name: "Gallan Goodiyaan",
     youtubeId: "jCEdTq3j-0U",
-    startTime: 0,
+    startTime: 1,
   },
   {
     movie: "Band Baaja Baaraat",
