@@ -78,9 +78,9 @@ export const songs = [
     startTime: 0,
   },
   {
-    movie: "Fan",
-    name: "Jabra Fan",
-    youtubeId: "d4_szl5EEww",
+    movie: "Hum Dil De Chuke Sanam",
+    name: "Chand Chhupa",
+    youtubeId: "B3D1cSzigOg",
     startTime: 0,
   },
   {
