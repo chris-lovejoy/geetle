@@ -82,8 +82,8 @@ export function Result({
 
   if (didGuess) {
     const copyResult = React.useCallback(() => {
+      alert("Score copied to clipboard");
       navigator.clipboard.writeText(scoreToEmoji(guesses, gameMode));
-      // alert("Score copied to clipboard");
     }, [guesses]);
 
     const secondsConjugation = currentTry === 1 ? "second" : "seconds";
