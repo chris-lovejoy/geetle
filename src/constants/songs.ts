@@ -144,9 +144,9 @@ export const songs = [
     startTime: 0,
   },
   {
-    movie: "Guru",
-    name: "Barso Re",
-    youtubeId: "xj_OHHWcPNw",
+    movie: "Kabhi Khushi Kabhie Gham",
+    name: "Kabhi Khushi Kabhie Gham",
+    youtubeId: "2wn3RHVpfxE",
     startTime: 0,
   },
   {
