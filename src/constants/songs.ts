@@ -147,7 +147,7 @@ export const songs = [
     movie: "Kabhi Khushi Kabhie Gham",
     name: "Kabhi Khushi Kabhie Gham",
     youtubeId: "2wn3RHVpfxE",
-    startTime: 0,
+    startTime: 2,
   },
   {
     movie: "Veer-Zaara",
