@@ -171,7 +171,7 @@ export const songs = [
     movie: "Dostana",
     name: "Maa Da Laadla",
     youtubeId: "wVCZmXiK-6k",
-    startTime: 1,
+    startTime: 2,
   },
   {
     movie: "Singh Is Bliing",
