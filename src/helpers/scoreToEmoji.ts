@@ -5,16 +5,16 @@ export function scoreToEmoji(guesses: GuessType[], gameMode: string): string {
     incorrect: "⭕",
     correctMasti: "🟢",
     correctUstaad: "🟣",
-    skip: "⚪️",
-    empty: "⚫️",
+    skip: "⚫️",
+    empty: "⚪️",
   };
   const todaysDate = new Date();
 
   let prefix = "";
 
-  if (gameMode === "Masti") {
+  if (gameMode === "Masti Mode") {
     prefix += `Geetle - ${todaysDate.toLocaleDateString()} Masti 🎧`;
-  } else if (gameMode === "Ustaad") {
+  } else if (gameMode === "Ustaad Mode") {
     prefix += `Geetle - ${todaysDate.toLocaleDateString()} Ustaad 🎧`;
   }
 
