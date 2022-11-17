@@ -12,10 +12,12 @@ export function scoreToEmoji(guesses: GuessType[], gameMode: string): string {
 
   let prefix = "";
 
-  if (gameMode === "Masti Mode") {
-    prefix += `Geetle - ${todaysDate.toLocaleDateString()} Masti 🎧`;
-  } else if (gameMode === "Ustaad Mode") {
-    prefix += `Geetle - ${todaysDate.toLocaleDateString()} Ustaad 🎧`;
+  if (gameMode === "Masti") {
+    prefix += `Geetle - ${todaysDate.toLocaleDateString()} 
+    Masti Mode 🎧`;
+  } else if (gameMode === "Ustaad") {
+    prefix += `Geetle - ${todaysDate.toLocaleDateString()} 
+    Ustaad Mode 🎧`;
   }
 
   let scoreEmoji = "";
