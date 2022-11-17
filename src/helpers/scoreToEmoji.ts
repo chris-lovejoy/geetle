@@ -14,10 +14,10 @@ export function scoreToEmoji(guesses: GuessType[], gameMode: string): string {
 
   if (gameMode === "Masti") {
     prefix += `Geetle - ${todaysDate.toLocaleDateString()} 
-    Masti Mode 🎧`;
+  Masti Mode: 🎧`;
   } else if (gameMode === "Ustaad") {
     prefix += `Geetle - ${todaysDate.toLocaleDateString()} 
-    Ustaad Mode 🎧`;
+  Ustaad Mode: 🎧`;
   }
 
   let scoreEmoji = "";
