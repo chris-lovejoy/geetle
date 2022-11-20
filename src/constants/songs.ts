@@ -563,5 +563,4 @@ export const songs = [
     youtubeId: "d8IT-16kA8M",
     startTime: 0,
   },
-  {
 ];
