@@ -315,7 +315,7 @@ export const songs = [
     movie: "Desi Boyz",
     name: "Allah Maaf Kare",
     youtubeId: "sm2hNJ9c8M8",
-    startTime: 0,
+    startTime: 14,
   },
   {
     movie: "Padmaavat",
