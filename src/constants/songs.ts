@@ -327,7 +327,7 @@ export const songs = [
     movie: "Badrinath Ki Dulhania",
     name: "Badri Ki Dulhania",
     youtubeId: "1YBl3Zbt80A",
-    startTime: 0,
+    startTime: 1,
   },
   {
     movie: "Mission Kashmir",
