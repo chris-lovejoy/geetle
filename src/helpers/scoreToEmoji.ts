@@ -44,5 +44,5 @@ export function scoreToEmoji(guesses: GuessType[], gameMode: string): string {
     scoreEmoji += emojis.empty;
   }
 
-  return `${prefix} ${scoreEmoji}`;
+  return `${prefix} ${scoreEmoji} www.geetle.app`;
 }
