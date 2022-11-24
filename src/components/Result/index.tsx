@@ -139,6 +139,13 @@ export function Result({
       </>
     );
   } else {
+    const copyResult = React.useCallback(() => {
+      alert("Score copied to clipboard");
+      navigator.clipboard.writeText(
+        "I didn't get today's Geetle! Can you? Try now at www.geetle.app"
+      );
+    }, [guesses]);
+
     return (
       <>
         {gameMode == "Masti" && (
@@ -151,6 +158,26 @@ export function Result({
           Today&apos;s song is {todaysSolution.movie} - {todaysSolution.name}
         </Styled.SongTitle>
         <YouTube id={todaysSolution.youtubeId} />
+        <Styled.GeetlePlayer>
+          <CircularInput value={playTimes[currentTry - 1] / 16000}>
+            <CircularTrack />
+            <CircularProgress stroke="#2C3088" strokeLinecap="butt" />
+            <line x1={100} x2={100} y1={-10} y2={10} stroke="#2C3088" />
+            <line x1={143} x2={135} y1={-1} y2={17} stroke="#2C3088" />
+            <line x1={180} x2={166} y1={25} y2={38} stroke="#2C3088" />
+            <line x1={190} x2={210} y1={100} y2={100} stroke="#2C3088" />
+            <line x1={143} x2={135} y1={201} y2={183} stroke="#2C3088" />
+            <line x1={-1} x2={17} y1={143} y2={135} stroke="#2C3088" />
+          </CircularInput>
+          <Styled.GeetleLogo>
+            <img
+              src={shareLogo}
+              height="120"
+              style={{ cursor: "pointer" }}
+              onClick={copyResult}
+            />
+          </Styled.GeetleLogo>
+        </Styled.GeetlePlayer>
         <Styled.TimeToNext>
           Come back tomorrow to try again - the song will be updated in{" "}
           {hoursToNextDay} hours and {minsToNextDay} minutes!
