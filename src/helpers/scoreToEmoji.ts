@@ -21,8 +21,10 @@ export function scoreToEmoji(guesses: GuessType[], gameMode: string): string {
   }
 
   let scoreEmoji = "";
+  let numGuesses = 0;
 
   guesses.forEach((guess: GuessType) => {
+    numGuesses += 1;
     if (guess.isCorrect === true) {
       if (gameMode === "Masti") {
         scoreEmoji += emojis.correctMasti;
@@ -37,6 +39,10 @@ export function scoreToEmoji(guesses: GuessType[], gameMode: string): string {
       scoreEmoji += emojis.empty;
     }
   });
+
+  if (numGuesses < 6) {
+    scoreEmoji += emojis.empty;
+  }
 
   return `${prefix} ${scoreEmoji}`;
 }
