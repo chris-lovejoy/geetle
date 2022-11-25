@@ -20,7 +20,7 @@ function App() {
   } as GuessType;
 
   const [guesses, setGuesses] = React.useState<GuessType[]>(
-    Array.from({ length: 5 }).fill(initialGuess) as GuessType[]
+    Array.from({ length: 6 }).fill(initialGuess) as GuessType[]
   );
   const [currentTry, setCurrentTry] = React.useState<number>(0);
   const [numPlaysAtTry, setNumPlaysAtTry] = React.useState<number>(0);
@@ -29,7 +29,21 @@ function App() {
 
   const firstRun = localStorage.getItem("firstRun") === null;
   let stats = JSON.parse(localStorage.getItem("stats") || "{}");
+
+  const dateNow = new Date();
+  const todayDate = dateNow.getDate();
+  const todayMonth = dateNow.getMonth();
+  const todayString = `${todayDate}-${todayMonth}`;
+  const lastPlayed = localStorage.getItem("lastPlayed") || 0;
   const gameMode = localStorage.getItem("gameMode") || "";
+
+  React.useEffect(() => {
+    if (lastPlayed != todayString) {
+      const gameMode = "";
+      localStorage.setItem("lastPlayed", todayString);
+      localStorage.setItem("gameMode", "");
+    }
+  }, []);
 
   React.useEffect(() => {
     if (Array.isArray(stats)) {
@@ -72,18 +86,6 @@ function App() {
   React.useEffect(() => {
     localStorage.setItem("stats", JSON.stringify(stats));
   }, [stats]);
-
-  React.useEffect(() => {
-    const dateNow = new Date();
-    const todayDate = dateNow.getDate();
-    const todayMonth = dateNow.getMonth();
-    const todayString = `${todayDate}-${todayMonth}`;
-    const lastPlayed = localStorage.getItem("lastPlayed") || 0;
-    if (lastPlayed != todayString) {
-      localStorage.setItem("lastPlayed", todayString);
-      localStorage.setItem("gameMode", "");
-    }
-  }, []);
 
   const [isInfoPopUpOpen, setIsInfoPopUpOpen] = React.useState<boolean>(true);
 
