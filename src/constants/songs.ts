@@ -387,13 +387,7 @@ export const songs = [
     movie: "Yeh Jawaani Hai Deewani",
     name: "Ghagra",
     youtubeId: "caoGNx1LF2Q",
-    startTime: 0,
-  },
-  {
-    movie: "Aaja Nachle",
-    name: "Aaja Nachle",
-    youtubeId: "MP4F0ZcW_G0",
-    startTime: 0,
+    startTime: 1,
   },
   {
     movie: "Bewafaa",
@@ -402,16 +396,16 @@ export const songs = [
     startTime: 33,
   },
   {
-    movie: "Anjaam",
-    name: "Channe Ke Khet Mein",
-    youtubeId: "ti3-y50DsMk",
-    startTime: 0,
-  },
-  {
     movie: "Josh",
     name: "Hai Mera Dil Churake Le Gaya",
     youtubeId: "v0Rhlq-ABe0",
     startTime: 2,
+  },
+  {
+    movie: "Anjaam",
+    name: "Channe Ke Khet Mein",
+    youtubeId: "ti3-y50DsMk",
+    startTime: 0,
   },
   {
     movie: "Dil To Pagal Hai",
@@ -454,6 +448,12 @@ export const songs = [
     name: "Mhare Hiwada Mein",
     youtubeId: "3UuSmbx6Xsg",
     startTime: 10,
+  },
+  {
+    movie: "Aaja Nachle",
+    name: "Aaja Nachle",
+    youtubeId: "MP4F0ZcW_G0",
+    startTime: 0,
   },
   {
     movie: "Kal Ho Naa Ho",
