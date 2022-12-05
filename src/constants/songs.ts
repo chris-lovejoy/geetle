@@ -399,7 +399,7 @@ export const songs = [
     movie: "Josh",
     name: "Hai Mera Dil Churake Le Gaya",
     youtubeId: "v0Rhlq-ABe0",
-    startTime: 2,
+    startTime: 3,
   },
   {
     movie: "Anjaam",
