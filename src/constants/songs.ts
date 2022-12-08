@@ -417,7 +417,7 @@ export const songs = [
     movie: "Mohabbatein",
     name: "Humko Humise Chura Lo",
     youtubeId: "zWPsjhBaRb0",
-    startTime: 5,
+    startTime: 6,
   },
   {
     movie: "Hello Brother",
