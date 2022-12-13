@@ -447,7 +447,7 @@ export const songs = [
     movie: "Hum Saath Saath Hain",
     name: "Mhare Hiwada Mein",
     youtubeId: "3UuSmbx6Xsg",
-    startTime: 10,
+    startTime: 11,
   },
   {
     movie: "Aaja Nachle",
