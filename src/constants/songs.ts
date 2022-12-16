@@ -462,9 +462,9 @@ export const songs = [
     startTime: 0,
   },
   {
-    movie: "Mubarakan",
-    name: "Hawa Hawa",
-    youtubeId: "2ll4IA146YI",
+    movie: "Mohra",
+    name: "Na Kajre Ki Dhar",
+    youtubeId: "C_wxaIOPMZk",
     startTime: 0,
   },
   {
