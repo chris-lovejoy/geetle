@@ -463,7 +463,7 @@ export const songs = [
   },
   {
     movie: "Mubarakan",
-    name: "Koi Mil Gaya",
+    name: "Hawa Hawa",
     youtubeId: "2ll4IA146YI",
     startTime: 0,
   },
