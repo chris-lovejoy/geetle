@@ -507,7 +507,7 @@ export const songs = [
     movie: "Ae Dil Hain Mushkil",
     name: "The Breakup Song",
     youtubeId: "kd5KqlmcHNo",
-    startTime: 0,
+    startTime: 1,
   },
   {
     movie: "Roy",
