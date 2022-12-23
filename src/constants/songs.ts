@@ -513,7 +513,7 @@ export const songs = [
     movie: "Roy",
     name: "Sooraj Dooba Hain",
     youtubeId: "nJZcbidTutE",
-    startTime: 1,
+    startTime: 2,
   },
   {
     movie: "Khiladi 786",
