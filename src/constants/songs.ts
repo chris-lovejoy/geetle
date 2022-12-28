@@ -540,6 +540,12 @@ export const songs = [
     startTime: 8,
   },
   {
+    movie: "Ae Dil Hai Mushkil",
+    name: "Channa Mereya",
+    youtubeId: "bzSTpdcs-EI",
+    startTime: 0,
+  },
+  {
     movie: "Phir Bhi Dil Hai Hindustani",
     name: "Banke Tera Jogi",
     youtubeId: "vcbWTEjUuyk",
