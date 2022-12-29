@@ -558,15 +558,21 @@ export const songs = [
     startTime: 14,
   },
   {
-    movie: "Karthik Calling Karthik",
-    name: "Uff Teri Adaa",
-    youtubeId: "qTsAdjULqwg",
-    startTime: 32,
+    movie: "Aap Ke Saath",
+    name: "Anewale Saal Ko Salaam",
+    youtubeId: "xjbejre2ilk",
+    startTime: 18,
   },
   {
     movie: "Happy New Year",
     name: "Manwa Laage",
     youtubeId: "d8IT-16kA8M",
     startTime: 0,
+  },
+  {
+    movie: "Karthik Calling Karthik",
+    name: "Uff Teri Adaa",
+    youtubeId: "qTsAdjULqwg",
+    startTime: 32,
   },
 ];
