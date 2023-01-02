@@ -654,7 +654,7 @@ export const songs = [
     startTime: 31,
   },
   {
-    movie: "Dhoom:3",
+    movie: "Dhoom 3",
     name: "Kamli",
     youtubeId: "C8kSrkz8Hz8",
     startTime: 5,
@@ -768,7 +768,7 @@ export const songs = [
     startTime: 36,
   },
   {
-    movie: "Golmaal ",
+    movie: "Golmaal",
     name: "Aage Peeche",
     youtubeId: "moUOsOD7rlg",
     startTime: 1,
