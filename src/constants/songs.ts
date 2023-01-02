@@ -604,7 +604,7 @@ export const songs = [
     name: "Nainowale Ne",
     youtubeId: "xE9FBL7jUGA",
     startTime: 6,
-  },  
+  },
   {
     movie: "Karan Arjun",
     name: "Jaati Hoon Main",
@@ -718,7 +718,7 @@ export const songs = [
     name: "Kar Gayi Chull",
     youtubeId: "NTHz9ephYTw",
     startTime: 0,
-  },  
+  },
   {
     movie: "Shershaah",
     name: "Raataan Lambiyan",
@@ -778,13 +778,13 @@ export const songs = [
     name: "Chaka Chak",
     youtubeId: "Kz5uJlucE5Q",
     startTime: 0,
-  },  
+  },
   {
     movie: "Housefull 4",
     name: "Shaitan Ka Saala",
     youtubeId: "oCBDl58lBoU",
     startTime: 2,
-  }, 
+  },
   {
     movie: "Partner",
     name: "You're My Love",
@@ -820,5 +820,5 @@ export const songs = [
     name: "Jabra Fan",
     youtubeId: "d4_szl5EEww",
     startTime: 22,
-   },
+  },
 ];
