@@ -693,11 +693,11 @@ export const songs = [
     movie: "Student Of The Year",
     name: "Kukkad",
     youtubeId: "1Na8nKEUjYI",
-    startTime: 0,
+    startTime: 1,
   },
   {
     movie: "Tiger Zinda Hai",
-    name: "Swag Se Swaga",
+    name: "Swag Se Swagat",
     youtubeId: "xmU0s2QtaEY",
     startTime: 7,
   },
