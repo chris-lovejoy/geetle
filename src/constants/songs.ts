@@ -765,7 +765,7 @@ export const songs = [
     movie: "Raja Hindustani",
     name: "Kitna Pyaara Tujhe",
     youtubeId: "KuysuMXViuE",
-    startTime: 36,
+    startTime: 37,
   },
   {
     movie: "Golmaal",
