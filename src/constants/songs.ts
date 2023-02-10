@@ -801,7 +801,7 @@ export const songs = [
     movie: "Jodhaa Akbar",
     name: "Jashn-E-Bahaaraa",
     youtubeId: "4h1WFyOQv0Y",
-    startTime: 0,
+    startTime: 2,
   },
   {
     movie: "Sultan",
