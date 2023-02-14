@@ -941,7 +941,7 @@ export const songs = [
     youtubeId: "d4_szl5EEww",
     startTime: 0,
   },
-    {
+  {
     movie: "new",
     name: "new",
     youtubeId: "d4_szl5EEww",
@@ -953,7 +953,7 @@ export const songs = [
     youtubeId: "d4_szl5EEww",
     startTime: 0,
   },
-    {
+  {
     movie: "new",
     name: "new",
     youtubeId: "d4_szl5EEww",
