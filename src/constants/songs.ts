@@ -822,7 +822,7 @@ export const songs = [
     startTime: 22,
   },
   {
-    movie: "Tum Bin 2", <!-- 14feb -->
+    movie: "Tum Bin 2",
     name: "Ishq Mubarak",
     youtubeId: "V1oczq_8L0E",
     startTime: 0,
