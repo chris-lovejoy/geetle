@@ -861,7 +861,7 @@ export const songs = [
     movie: "Veer-Zaara",
     name: "Main Yahaan Hoon Song",
     youtubeId: "_eWOXgrQW9g",
-    startTime: 0,
+    startTime: 1,
   },
   {
     movie: "Mohra",
