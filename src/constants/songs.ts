@@ -858,12 +858,6 @@ export const songs = [
     startTime: 15,
   },
   {
-    movie: "Safar",
-    name: "Zindagi Ka Safar",
-    youtubeId: "vLpRfaRiDnk",
-    startTime: 8,
-  },
-  {
     movie: "Veer-Zaara",
     name: "Main Yahaan Hoon Song",
     youtubeId: "_eWOXgrQW9g",
