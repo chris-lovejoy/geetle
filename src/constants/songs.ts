@@ -858,6 +858,12 @@ export const songs = [
     startTime: 15,
   },
   {
+    movie: "Pyaar To Hona Hi Tha",
+    name: "Aaj Hai Sagaai",
+    youtubeId: "BsjCHGfYNwk",
+    startTime: 3,
+  },
+  {
     movie: "Veer-Zaara",
     name: "Main Yahaan Hoon Song",
     youtubeId: "_eWOXgrQW9g",
