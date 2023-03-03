@@ -924,12 +924,6 @@ export const songs = [
     startTime: 32,
   },
   {
-    movie: "Satyameva Jayate 2",
-    name: "Kusu Kusu",
-    youtubeId: "gzLnmTaCAU",
-    startTime: 17,
-  },
-  {
     movie: "Major Saab",
     name: "Pyar Kiya To Nibhana",
     youtubeId: "eBxMPuj1vsk",
