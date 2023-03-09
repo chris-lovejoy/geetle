@@ -963,7 +963,7 @@ export const songs = [
     movie: "Jannat",
     name: "Zara Sa",
     youtubeId: "IN7E5WL29SE",
-    startTime: 0,
+    startTime: 2,
   },
   {
     movie: "Suhaag",
