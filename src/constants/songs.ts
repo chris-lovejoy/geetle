@@ -972,10 +972,10 @@ export const songs = [
     startTime: 0,
   },
   {
-    movie: "new",
-    name: "new",
-    youtubeId: "d4_szl5EEww",
-    startTime: 0,
+    movie: "Lamhe",
+    name: "Morni Baaga Ma Bole",
+    youtubeId: "7PBpaR9Skhk",
+    startTime: 19,
   },
   {
     movie: "new",
