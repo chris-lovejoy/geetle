@@ -978,15 +978,15 @@ export const songs = [
     startTime: 0,
   },
   {
-    movie: "new",
-    name: "new",
-    youtubeId: "d4_szl5EEww",
+    movie: "Padmaavat",
+    name: "Ghoomar",
+    youtubeId: "CU1tFtk_NFY",
     startTime: 0,
   },
   {
-    movie: "new",
-    name: "new",
-    youtubeId: "d4_szl5EEww",
+    movie: "Bharat",
+    name: "Aithey Aa",
+    youtubeId: "UjTGNhb5KEU",
     startTime: 0,
   },
   {
