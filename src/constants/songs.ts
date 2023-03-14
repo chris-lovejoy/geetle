@@ -990,10 +990,10 @@ export const songs = [
     startTime: 0,
   },
   {
-    movie: "new",
-    name: "new",
-    youtubeId: "d4_szl5EEww",
-    startTime: 0,
+    movie: "Baar Baar Dekho",
+    name: "Nachde Ne Saare",
+    youtubeId: "HgIW7P4dsXU",
+    startTime: 11,
   },
   {
     movie: "new",
