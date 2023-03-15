@@ -996,10 +996,10 @@ export const songs = [
     startTime: 11,
   },
   {
-    movie: "new",
-    name: "new",
-    youtubeId: "d4_szl5EEww",
-    startTime: 0,
+    movie: "1942 A Love Story",
+    name: "Rim Jhim Rim Jhim",
+    youtubeId: "lpFJgg9ZiTY",
+    startTime: 22,
   },
   {
     movie: "new",
