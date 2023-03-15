@@ -1005,7 +1005,7 @@ export const songs = [
     movie: "Kabhi Khushi Kabhie Gham",
     name: "Bole Chudiyan",
     youtubeId: "IBvg3WeqP1U",
-    startTime: 0,
+    startTime: 1,
   },
   {
     movie: "new",
