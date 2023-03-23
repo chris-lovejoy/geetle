@@ -1062,9 +1062,9 @@ export const songs = [
     startTime: 0,
   },
   {
-    movie: "new",
-    name: "new",
-    youtubeId: "d4_szl5EEww",
+    movie: "Race",
+    name: "Pehli Nazar Mein",
+    youtubeId: "BadBAMnPX0I",
     startTime: 0,
   },
   {
