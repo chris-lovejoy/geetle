@@ -1056,10 +1056,10 @@ export const songs = [
     startTime: 0,
   },
   {
-    movie: "new",
-    name: "new",
-    youtubeId: "d4_szl5EEww",
-    startTime: 0,
+    movie: "Dil To Pagal Hai",
+    name: "Are Re Are",
+    youtubeId: "OEpFiDKqH7E",
+    startTime: 4,
   },
   {
     movie: "Race",
