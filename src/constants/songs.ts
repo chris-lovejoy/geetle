@@ -1050,10 +1050,10 @@ export const songs = [
     startTime: 1,
   },
   {
-    movie: "Mann",
-    name: "Mera Mann Kyun Tumhe",
-    youtubeId: "UjEfKx6aaUM",
-    startTime: 0,
+    movie: "Har Dil Jo Pyar Karega",
+    name: "Piya Piya O Piya",
+    youtubeId: "z993Lzs5Ovc",
+    startTime: 6,
   },
   {
     movie: "Dil To Pagal Hai",
@@ -1068,9 +1068,9 @@ export const songs = [
     startTime: 0,
   },
   {
-    movie: "new",
-    name: "new",
-    youtubeId: "d4_szl5EEww",
+    movie: "Dhoom 2",
+    name: "Touch Me",
+    youtubeId: "TWcSSDtSz0o",
     startTime: 0,
   },
   {
