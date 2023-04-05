@@ -1124,7 +1124,7 @@ export const songs = [
   {
     movie: "Rab Ne Bana Di Jodi",
     name: "Phir Milenge Chalte Chalte",
-    youtubeId: "DErhADhhmg",
+    youtubeId: "6wOykpgGBPc",
     startTime: 0,
   },
   {
