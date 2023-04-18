@@ -1193,4 +1193,10 @@ export const songs = [
     youtubeId: "ZEMsTk5SPSg",
     startTime: 0,
   },
+  {
+    movie: "Pathaan",
+    name: "Jhoome Jo Pathaan",
+    youtubeId: "YxWlaYCA8MU",
+    startTime: 0,
+  },
 ];
