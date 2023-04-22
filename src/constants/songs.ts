@@ -1224,6 +1224,12 @@ export const songs = [
     startTime: 0,
   },
   {
+    movie: "new",
+    name: "new",
+    youtubeId: "ZEMsTk5SPSg",
+    startTime: 0,
+  },
+  {
     movie: "Silsila",
     name: "Rang Barse",
     youtubeId: "Jf92MOkrbEw",
