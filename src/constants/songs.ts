@@ -1,5 +1,29 @@
 export const songs = [
   {
+    movie: "Queen",
+    name: "London Thumakda",
+    youtubeId: "udra3Mfw2oo",
+    startTime: 0,
+  },
+  {
+    movie: "Honeymoon Travels Pvt. Ltd",
+    name: "Sajanaji Vari Vari",
+    youtubeId: "ZEMsTk5SPSg",
+    startTime: 0,
+  },
+  {
+    movie: "Pathaan",
+    name: "Jhoome Jo Pathaan",
+    youtubeId: "YxWlaYCA8MU",
+    startTime: 0,
+  },
+  {
+    movie: "Saawariya",
+    name: "Yoon Shabnami",
+    youtubeId: "HAKp1hyeaFU",
+    startTime: 16,
+  },
+  {
     movie: "Yaraana",
     name: "Mera Piya Ghar Aaya",
     youtubeId: "xVViRaALOLM",
@@ -1180,29 +1204,5 @@ export const songs = [
     name: "Iski Uski",
     youtubeId: "xQMMBANbcdQ",
     startTime: 0,
-  },
-  {
-    movie: "Queen",
-    name: "London Thumakda",
-    youtubeId: "udra3Mfw2oo",
-    startTime: 0,
-  },
-  {
-    movie: "Honeymoon Travels Pvt. Ltd",
-    name: "Sajanaji Vari Vari",
-    youtubeId: "ZEMsTk5SPSg",
-    startTime: 0,
-  },
-  {
-    movie: "Pathaan",
-    name: "Jhoome Jo Pathaan",
-    youtubeId: "YxWlaYCA8MU",
-    startTime: 0,
-  },
-  {
-    movie: "Saawariya",
-    name: "Yoon Shabnami",
-    youtubeId: "HAKp1hyeaFU",
-    startTime: 16,
   },
 ];
